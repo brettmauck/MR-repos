@@ -313,6 +313,21 @@
     "lng": -83.09103752103
   },
   {
+    "id": "a252b17d-adf2-447b-9b05-65379f33d44e",
+    "date": "2026-06-22",
+    "name": "Super Seafood Buffet",
+    "address": "1662 E Dublin Granville Rd, Columbus, OH 43229",
+    "yelp": 2.6,
+    "mullet": 2.4,
+    "gooning": false,
+    "pizza": true,
+    "cost": 35.9,
+    "link": "https://www.instagram.com/reel/DZ5egsWx6jP/?obrf=MTNjMWlhNnJsenBybw==",
+    "fortune": "Seek friendship and you’ll find someone special this month.",
+    "lat": 40.087138909359,
+    "lng": -82.973644652472
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
