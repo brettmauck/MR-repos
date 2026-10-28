@@ -1,0 +1,6 @@
+[
+  {"id":"demo-1","date":"2026-01-10","name":"DEMO – Golden Dragon Buffet","address":"Chicago, IL","lat":41.8781,"lng":-87.6298,"yelp":3.5,"mullet":4.2,"gooning":true,"pizza":true,"cost":38.5,"link":""},
+  {"id":"demo-2","date":"2026-02-02","name":"DEMO – Lucky Panda Buffet","address":"Nashville, TN","lat":36.1627,"lng":-86.7816,"yelp":4.0,"mullet":3.1,"gooning":false,"pizza":false,"cost":42.0,"link":""},
+  {"id":"demo-3","date":"2026-03-15","name":"DEMO – China King Buffet","address":"Dallas, TX","lat":32.7767,"lng":-96.797,"yelp":3.0,"mullet":4.8,"gooning":true,"pizza":true,"cost":35.0,"link":""},
+  {"id":"demo-4","date":"2026-04-20","name":"DEMO – Great Wall Buffet","address":"Phoenix, AZ","lat":33.4484,"lng":-112.074,"yelp":3.8,"mullet":2.5,"gooning":false,"pizza":true,"cost":45.99,"link":""}
+]

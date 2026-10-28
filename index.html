@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mullet Buffet Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🥢 Mullet Buffet Tracker</h1>
+    <nav>
+      <button class="tab active" data-tab="map">Map</button>
+      <button class="tab" data-tab="log">Buffet Log</button>
+    </nav>
+  </header>
+
+  <section id="stats" class="stats"></section>
+
+  <main>
+    <section id="tab-map" class="panel active">
+      <div id="map"></div>
+      <p class="hint" id="map-hint"></p>
+    </section>
+
+    <section id="tab-log" class="panel">
+      <div class="toolbar">
+        <button id="add-btn" class="primary">+ Add buffet</button>
+        <button id="export-btn">Export JSON</button>
+        <label class="file-btn">Import JSON<input type="file" id="import-file" accept="application/json" hidden></label>
+        <button id="demo-btn">Load demo data</button>
+      </div>
+      <div class="table-wrap">
+        <table id="log-table">
+          <thead>
+            <tr>
+              <th data-sort="order">#</th>
+              <th data-sort="date">Date</th>
+              <th data-sort="name">Buffet</th>
+              <th data-sort="address">Address</th>
+              <th data-sort="yelp">Yelp ★</th>
+              <th data-sort="mullet">Mullet ★</th>
+              <th data-sort="delta">Δ (M − Y)</th>
+              <th data-sort="gooning">Gooning?</th>
+              <th data-sort="pizza">Pizza?</th>
+              <th data-sort="cost">Cost (2 ppl)</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="hint" id="log-empty"></p>
+    </section>
+  </main>
+
+  <dialog id="visit-dialog">
+    <form id="visit-form" method="dialog">
+      <h2 id="dialog-title">Add buffet</h2>
+      <label>Date visited <input type="date" name="date" required></label>
+      <label>Buffet name <input type="text" name="name" required></label>
+      <label>Buffet address <input type="text" name="address" required placeholder="123 Main St, Springfield, IL"></label>
+      <div class="row">
+        <label>Yelp rating <input type="number" name="yelp" min="0" max="5" step="0.1" required></label>
+        <label>Mullet rating <input type="number" name="mullet" min="0" max="5" step="0.1" required></label>
+      </div>
+      <div class="row">
+        <label>Gooning?
+          <select name="gooning"><option value="true">Gooning</option><option value="false">Not gooning</option></select>
+        </label>
+        <label>Pizza on buffet?
+          <select name="pizza"><option value="true">Yes</option><option value="false">No</option></select>
+        </label>
+      </div>
+      <label>Cost for 2 ($) <input type="number" name="cost" min="0" step="0.01" required></label>
+      <label>Instagram link (optional) <input type="url" name="link" placeholder="https://instagram.com/..."></label>
+      <details>
+        <summary>Map location (auto-filled from address)</summary>
+        <div class="row">
+          <label>Latitude <input type="number" name="lat" step="any"></label>
+          <label>Longitude <input type="number" name="lng" step="any"></label>
+        </div>
+      </details>
+      <p class="form-status" id="form-status"></p>
+      <div class="dialog-actions">
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="submit" class="primary" id="save-btn">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
