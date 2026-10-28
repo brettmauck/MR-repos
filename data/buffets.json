@@ -50,9 +50,10 @@
     "yelp": 3.3,
     "mullet": 5,
     "gooning": true,
-    "pizza": null,
+    "pizza": false,
     "cost": null,
     "link": "https://www.instagram.com/reel/DZEJHYhOifB/?srtk=aXpvYzJqdXRhdzht",
+    "fortune": "",
     "lat": 39.421977058619,
     "lng": -84.587542745186
   },
