@@ -268,6 +268,21 @@
     "lng": -83.095981527764
   },
   {
+    "id": "1f2c3edd-67f7-4218-9c7e-eb106658c9ac",
+    "date": "2026-06-19",
+    "name": "Supreme Buffet and Hibachi",
+    "address": "1323 W St James Lutheran Ln, Columbus, OH 43228",
+    "yelp": 2.8,
+    "mullet": 2.5,
+    "gooning": true,
+    "pizza": true,
+    "cost": 28.8,
+    "link": "https://www.instagram.com/reel/DZxWrzWut4f/?vrfl=MWRlaDZnZnFhMGE4ZA==",
+    "fortune": "",
+    "lat": 39.978957707587,
+    "lng": -83.147513678692
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
