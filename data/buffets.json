@@ -84,6 +84,20 @@
     "lng": -84.523588042867
   },
   {
+    "id": "f58c5f96-2516-451c-add8-9109acfab46b",
+    "date": "2026-06-05",
+    "name": "Happy Garden Buffet",
+    "address": "10557 Harrison Ave A, Harrison, OH 45030",
+    "yelp": 3.1,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": false,
+    "cost": null,
+    "link": "https://www.instagram.com/reel/DZNZFRpu5e0/?psln=MXUxeDFtYXljMTMyZw==",
+    "lat": 39.252920304565,
+    "lng": -84.794810495977
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
