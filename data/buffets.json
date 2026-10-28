@@ -5,7 +5,7 @@
     "name": "Ginza Buffet",
     "address": "39.19265,-84.24423",
     "yelp": 4.8,
-    "mullet": 4.8,
+    "mullet": null,
     "gooning": true,
     "pizza": true,
     "cost": null,
