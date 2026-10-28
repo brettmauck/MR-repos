@@ -56,6 +56,20 @@
     "lng": -84.587542745186
   },
   {
+    "id": "93966113-3e04-447a-9de6-3ded0c3e065c",
+    "date": "2026-06-02",
+    "name": "Bee’s Buffet",
+    "address": "725 Nilles Rd, Fairfield, OH 45014",
+    "yelp": 3.5,
+    "mullet": 3.5,
+    "gooning": null,
+    "pizza": true,
+    "cost": null,
+    "link": "https://www.instagram.com/reel/DZGlj22OOkB/?srtk=dDIzejF1cTg5N2x6",
+    "lat": 39.337412206304,
+    "lng": -84.556006738373
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
