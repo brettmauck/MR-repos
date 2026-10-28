@@ -448,6 +448,21 @@
     "lng": -84.123283111547
   },
   {
+    "id": "7dca492d-ccf3-460d-ad3d-cb6a820bd61c",
+    "date": "2026-07-03",
+    "name": "Asian Buffet",
+    "address": "6999 Miller Ln, Dayton, OH 45414",
+    "yelp": 2.4,
+    "mullet": 2,
+    "gooning": true,
+    "pizza": false,
+    "cost": 33.52,
+    "link": "https://www.instagram.com/reel/DaVcHNeO6WJ/?rpxt=MmZjN2w5eDgwNzdy",
+    "fortune": "",
+    "lat": 39.849226093393,
+    "lng": -84.19203414989
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
