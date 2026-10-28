@@ -208,6 +208,21 @@
     "lng": -84.4771778
   },
   {
+    "id": "b24523ac-9b66-4652-9bd8-4f74974a6c9c",
+    "date": "2026-06-15",
+    "name": "#1 China Buffet",
+    "address": "1587 Rombach Ave, Wilmington, OH 45177",
+    "yelp": 3,
+    "mullet": 3.1,
+    "gooning": false,
+    "pizza": null,
+    "cost": 35.93,
+    "link": "https://www.instagram.com/reel/DZm7iftOv8T/?obrf=NmdreW1qNGZwcG1o",
+    "fortune": "You will live a healthy life.",
+    "lat": 39.449894657854,
+    "lng": -83.800665721086
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
