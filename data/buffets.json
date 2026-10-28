@@ -178,6 +178,21 @@
     "lng": -84.365905333885
   },
   {
+    "id": "86c1c590-8478-4a17-bf21-30a52860b6f8",
+    "date": "2026-06-11",
+    "name": "China Buffet",
+    "address": "4394 Eastgate Square Dr, Cincinnati, OH 45245",
+    "yelp": 2.6,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 32,
+    "link": "https://www.instagram.com/reel/DZd_GDwOfz1/?vrfl=MWgxdmlpc2l1dzgzNA==",
+    "fortune": "Your financial situation will be secure and stable.",
+    "lat": 39.093995090414,
+    "lng": -84.26942028959
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
