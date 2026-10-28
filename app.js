@@ -154,6 +154,7 @@ function popupHtml(v, n) {
     <div>Yelp ${known(v.yelp) ? v.yelp + '★' : '—'} · Mullet ${known(v.mullet) ? v.mullet + '★' : '—'} · Δ <b>${d === null ? '—' : fmtDelta(d)}</b></div>
     <div>${v.gooning === null || v.gooning === undefined ? 'Gooning: —' : v.gooning ? '🔥 Gooning' : '🚫 Not gooning'} · ${v.pizza === null || v.pizza === undefined ? 'Pizza: —' : v.pizza ? '🍕 Pizza' : 'No pizza'}</div>
     <div>${known(v.cost) ? fmtMoney(v.cost) + ' for 2' : 'Cost: —'}</div>
+    ${v.fortune ? `<div class="fortune">🥠 “${esc(v.fortune)}”</div>` : ''}
     ${v.link ? `<div><a href="${esc(v.link)}" target="_blank" rel="noopener">Watch the review</a></div>` : ''}`;
 }
 
@@ -206,6 +207,7 @@ function renderTable() {
       <td>${known(v.gooning) ? `<span class="pill ${v.gooning ? 'yes' : ''}">${v.gooning ? 'Gooning' : 'Not gooning'}</span>` : NA}</td>
       <td>${known(v.pizza) ? `<span class="pill ${v.pizza ? 'yes' : ''}">${v.pizza ? '🍕 Yes' : 'No'}</span>` : NA}</td>
       <td class="num">${known(v.cost) ? fmtMoney(v.cost) : NA}</td>
+      <td class="fortune-cell">${v.fortune ? '“' + esc(v.fortune) + '”' : NA}</td>
       <td class="row-actions editor-only"><button data-edit="${esc(v.id)}">Edit</button> <button data-del="${esc(v.id)}">Delete</button></td>
     </tr>`;
   }).join('');
@@ -256,6 +258,7 @@ function openDialog(v) {
   f.pizza.value = known(v?.pizza) ? String(v.pizza) : '';
   f.cost.value = v?.cost ?? '';
   f.link.value = v?.link ?? '';
+  f.fortune.value = v?.fortune ?? '';
   f.lat.value = v?.lat ?? '';
   f.lng.value = v?.lng ?? '';
   form.dataset.origAddress = v?.address ?? '';
@@ -356,6 +359,7 @@ form.addEventListener('submit', async e => {
     pizza: boolOrNull(f.pizza.value),
     cost: numOrNull(f.cost.value),
     link: f.link.value.trim(),
+    fortune: f.fortune.value.trim(),
     lat: f.lat.value === '' ? null : +f.lat.value,
     lng: f.lng.value === '' ? null : +f.lng.value,
   };
