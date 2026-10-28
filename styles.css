@@ -113,3 +113,5 @@ body.is-editor #editor-btn { border-color: var(--good); }
 td.fortune-cell { white-space: normal; min-width: 200px; font-style: italic; }
 #visit-form textarea { resize: vertical; }
 .leaflet-popup-content .fortune { font-style: italic; margin-top: 4px; }
+
+.version { text-align: center; color: var(--muted); font-size: 0.75rem; padding: 0 16px 20px; }
