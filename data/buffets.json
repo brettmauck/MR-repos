@@ -493,6 +493,21 @@
     "lng": -85.595834191736
   },
   {
+    "id": "92c5d1e6-f8b1-498e-83d9-efd311c940bf",
+    "date": "2026-07-06",
+    "name": "Yoki Buffet",
+    "address": "1700 Alliant Ave, Louisville, KY 40299",
+    "yelp": 3.3,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": true,
+    "cost": 27.54,
+    "link": "https://www.instagram.com/reel/DaeCg9HOhV_/?exln=MWdrbmJ2MTA2aDF6OA==",
+    "fortune": "",
+    "lat": 38.21851179211,
+    "lng": -85.537510835256
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
