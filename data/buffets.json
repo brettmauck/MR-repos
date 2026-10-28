@@ -133,6 +133,21 @@
     "lng": -84.293678979201
   },
   {
+    "id": "142e119a-e527-417f-92a4-952cfe9efc40",
+    "date": "2026-06-07",
+    "name": "China King Buffet",
+    "address": "4535 Roosevelt Blvd, Middletown, OH 45044",
+    "yelp": 3.1,
+    "mullet": 2.5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 33.43,
+    "link": "https://www.instagram.com/reel/DZTvoxNuMlS/?srtk=MXR4ZTFnNHVndnpiMw==",
+    "fortune": "",
+    "lat": 39.499500216813,
+    "lng": -84.350408089337
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
