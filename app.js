@@ -58,8 +58,9 @@ function renderStats() {
 // ---------- map ----------
 const US_BOUNDS = [[24.4, -125], [49.4, -66.9]];
 const map = L.map('map', { scrollWheelZoom: true }).fitBounds(US_BOUNDS);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; OpenStreetMap contributors &copy; CARTO', maxZoom: 19,
+// Free OpenStreetMap tiles, no API key needed.
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors', maxZoom: 19,
 }).addTo(map);
 const layer = L.layerGroup().addTo(map);
 
