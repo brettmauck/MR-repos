@@ -103,6 +103,21 @@
     "lng": -84.794810495977
   },
   {
+    "id": "92343224-0322-4438-bb0c-03f67e57015a",
+    "date": "2026-06-06",
+    "name": "Grand Buffet",
+    "address": "3320 Highland Ave, Cincinnati, OH 45213",
+    "yelp": 3,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": false,
+    "cost": null,
+    "link": "https://www.instagram.com/reel/DZP2Vwqur8B/?exln=NWJxNHJxdGdvdTNp",
+    "fortune": "",
+    "lat": 39.170179134774,
+    "lng": -84.424629013621
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
