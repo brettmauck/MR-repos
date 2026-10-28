@@ -94,3 +94,14 @@ details summary { cursor: pointer; font-size: 0.85rem; color: var(--muted); marg
 .num-marker.latest { background: var(--accent-2); color: #1f1a17; }
 .leaflet-popup-content { font-size: 0.85rem; line-height: 1.4; }
 .leaflet-popup-content h3 { margin: 0 0 4px; font-size: 1rem; }
+
+/* Editing controls are only shown to the signed-in editor. */
+body:not(.is-editor) .editor-only { display: none !important; }
+body.is-editor #editor-btn { border-color: var(--good); }
+#editor-form { display: flex; flex-direction: column; gap: 10px; padding: 20px; }
+#editor-form h2 { margin: 0; font-size: 1.1rem; }
+#editor-form p { margin: 0; }
+#editor-form label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: var(--muted); }
+#editor-form input { font: inherit; color: var(--text); background: var(--bg); padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; }
+.toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--text); color: var(--bg);
+  padding: 10px 16px; border-radius: 10px; font-size: 0.9rem; z-index: 2000; max-width: calc(100vw - 32px); }

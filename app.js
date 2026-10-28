@@ -1,22 +1,17 @@
 // Mullet Buffet Tracker
-// Visits are saved in this browser (localStorage). Use Export/Import JSON to back up or share.
-const STORAGE_KEY = 'mullet-buffet-visits-v1';
+// The buffet list lives in data/buffets.json in the GitHub repo, so every device sees the same data.
+// Visitors read it from the website. The editor signs in with a GitHub token, and saves commit straight to the repo.
+const REPO = 'brettmauck/MR-repos';
+const BRANCH = 'master';
+const DATA_PATH = 'data/buffets.json';
+const TOKEN_KEY = 'mullet-buffet-github-token';
+const API_URL = `https://api.github.com/repos/${REPO}/contents/${DATA_PATH}`;
 
-let visits = load();
+let visits = [];
 let sortKey = 'order';
 let sortDir = 1;
 let editingId = null;
-
-// ---------- storage ----------
-function load() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch { return []; }
-}
-function save() {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(visits)); } catch {}
-}
+let token = readToken();
 
 // ---------- helpers ----------
 const byDate = (a, b) => (a.date || '').localeCompare(b.date || '');
@@ -30,6 +25,74 @@ const stateOf = addr => {
   const m = String(addr).match(/,\s*([A-Z]{2})\b(?:\s+\d{5})?\s*$/);
   return m ? m[1] : null;
 };
+// Accepts an "address" that is really coordinates, e.g. "39.19,-84.24".
+const parseCoords = s => {
+  const m = String(s).match(/^\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*$/);
+  return m ? { lat: +m[1], lng: +m[2] } : null;
+};
+function toast(msg, ms = 3500) {
+  const el = Object.assign(document.createElement('div'), { className: 'toast', textContent: msg });
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), ms);
+}
+
+// ---------- token (stored only on this device) ----------
+function readToken() {
+  try { return localStorage.getItem(TOKEN_KEY) || ''; } catch { return ''; }
+}
+function writeToken(t) {
+  token = t;
+  try { t ? localStorage.setItem(TOKEN_KEY, t) : localStorage.removeItem(TOKEN_KEY); } catch {}
+  document.body.classList.toggle('is-editor', !!t);
+}
+
+// ---------- GitHub data ----------
+const toBase64 = str => btoa(unescape(encodeURIComponent(str)));
+const fromBase64 = b64 => decodeURIComponent(escape(atob(b64.replace(/\n/g, ''))));
+
+async function githubGet() {
+  const res = await fetch(`${API_URL}?ref=${BRANCH}&t=${Date.now()}`, {
+    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' },
+    cache: 'no-store',
+  });
+  if (res.status === 401 || res.status === 403) throw new Error('auth');
+  if (!res.ok) throw new Error('GitHub read failed (' + res.status + ')');
+  const body = await res.json();
+  return { list: JSON.parse(fromBase64(body.content)), sha: body.sha };
+}
+
+// Applies `change` to the latest list on GitHub and commits it. Retries once if the file changed meanwhile.
+async function githubSave(change, message) {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const { list, sha } = await githubGet();
+    const next = change(list).sort(byDate);
+    const res = await fetch(API_URL, {
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message, branch: BRANCH, sha, content: toBase64(JSON.stringify(next, null, 2) + '\n') }),
+    });
+    if (res.ok) return next;
+    if (res.status === 401 || res.status === 403) throw new Error('auth');
+    if (res.status !== 409 && res.status !== 422) throw new Error('GitHub save failed (' + res.status + ')');
+  }
+  throw new Error('GitHub save failed (file kept changing)');
+}
+
+async function loadVisits() {
+  if (token) {
+    try { return (await githubGet()).list; }
+    catch (e) { if (e.message === 'auth') toast('Your GitHub token stopped working. Sign in again with the 🔑 button.'); }
+  }
+  // Public copy served by GitHub Pages (can be ~1 minute behind a fresh save).
+  const res = await fetch(`${DATA_PATH}?t=${Date.now()}`, { cache: 'no-store' });
+  return res.ok ? res.json() : [];
+}
+
+function friendlyError(e) {
+  return e.message === 'auth'
+    ? 'GitHub rejected your token. Check it has Contents: Read and write access to this repo.'
+    : "Couldn't save to GitHub: " + e.message;
+}
 
 // ---------- tabs ----------
 document.querySelectorAll('.tab').forEach(btn => btn.addEventListener('click', () => {
@@ -41,15 +104,16 @@ document.querySelectorAll('.tab').forEach(btn => btn.addEventListener('click', (
 // ---------- stats ----------
 function renderStats() {
   const states = new Set(visits.map(v => stateOf(v.address)).filter(Boolean));
+  const n = visits.length;
   const items = [
-    ['Buffets', visits.length],
+    ['Buffets', n],
     ['States', states.size],
-    ['Avg Mullet ★', visits.length ? avg(visits.map(v => v.mullet)).toFixed(2) : '–'],
-    ['Avg Yelp ★', visits.length ? avg(visits.map(v => v.yelp)).toFixed(2) : '–'],
-    ['Avg Δ', visits.length ? fmtDelta(avg(visits.map(delta))) : '–'],
-    ['Gooning', visits.length ? Math.round(100 * visits.filter(v => v.gooning).length / visits.length) + '%' : '–'],
-    ['Pizza', visits.length ? Math.round(100 * visits.filter(v => v.pizza).length / visits.length) + '%' : '–'],
-    ['Avg cost (2)', visits.length ? fmtMoney(avg(visits.map(v => +v.cost))) : '–'],
+    ['Avg Mullet ★', n ? avg(visits.map(v => v.mullet)).toFixed(2) : '–'],
+    ['Avg Yelp ★', n ? avg(visits.map(v => v.yelp)).toFixed(2) : '–'],
+    ['Avg Δ', n ? fmtDelta(avg(visits.map(delta))) : '–'],
+    ['Gooning', n ? Math.round(100 * visits.filter(v => v.gooning).length / n) + '%' : '–'],
+    ['Pizza', n ? Math.round(100 * visits.filter(v => v.pizza).length / n) + '%' : '–'],
+    ['Avg cost (2)', n ? fmtMoney(avg(visits.map(v => +v.cost))) : '–'],
   ];
   document.getElementById('stats').innerHTML = items
     .map(([l, v]) => `<div class="stat"><div class="label">${l}</div><div class="value">${v}</div></div>`).join('');
@@ -88,7 +152,7 @@ function renderMap() {
   });
   const missing = visits.length - located.length;
   document.getElementById('map-hint').textContent = visits.length === 0
-    ? 'No buffets logged yet. Add one in the Buffet Log tab.'
+    ? 'No buffets logged yet.'
     : `Numbers show visit order; the dashed line is the route. The latest stop is gold.${missing ? ` ${missing} buffet(s) have no map location yet.` : ''}`;
 }
 function fitMap() {
@@ -117,37 +181,51 @@ function renderTable() {
       <td>${esc(v.date)}</td>
       <td>${v.link ? `<a href="${esc(v.link)}" target="_blank" rel="noopener">${esc(v.name)}</a>` : esc(v.name)}</td>
       <td class="addr">${esc(v.address)}${Number.isFinite(v.lat) ? '' : ' <span class="no-loc">(not on map)</span>'}</td>
-      <td class="num">${v.yelp.toFixed(1)}</td>
-      <td class="num">${v.mullet.toFixed(1)}</td>
+      <td class="num">${Number(v.yelp).toFixed(1)}</td>
+      <td class="num">${Number(v.mullet).toFixed(1)}</td>
       <td class="num ${d > 0 ? 'delta-pos' : d < 0 ? 'delta-neg' : ''}">${fmtDelta(d)}</td>
       <td><span class="pill ${v.gooning ? 'yes' : ''}">${v.gooning ? 'Gooning' : 'Not gooning'}</span></td>
       <td><span class="pill ${v.pizza ? 'yes' : ''}">${v.pizza ? '🍕 Yes' : 'No'}</span></td>
       <td class="num">${fmtMoney(v.cost)}</td>
-      <td class="row-actions"><button data-edit="${v.id}">Edit</button> <button data-del="${v.id}">Delete</button></td>
+      <td class="row-actions editor-only"><button data-edit="${esc(v.id)}">Edit</button> <button data-del="${esc(v.id)}">Delete</button></td>
     </tr>`;
   }).join('');
-  document.getElementById('log-empty').textContent = visits.length ? '' : 'No buffets yet. Tap "+ Add buffet" (or "Load demo data" to try it out).';
+  document.getElementById('log-empty').textContent = visits.length ? '' : 'No buffets logged yet.';
 }
 
 document.querySelectorAll('th[data-sort]').forEach(th => th.addEventListener('click', () => {
   if (sortKey === th.dataset.sort) sortDir *= -1; else { sortKey = th.dataset.sort; sortDir = 1; }
   renderTable();
 }));
-document.querySelector('#log-table tbody').addEventListener('click', e => {
+document.querySelector('#log-table tbody').addEventListener('click', async e => {
   const editId = e.target.dataset.edit, delId = e.target.dataset.del;
   if (editId) openDialog(visits.find(v => v.id === editId));
-  if (delId && confirm('Delete this buffet?')) { visits = visits.filter(v => v.id !== delId); commit(); }
+  if (delId) {
+    const v = visits.find(x => x.id === delId);
+    if (!v || !confirm(`Delete ${v.name}?`)) return;
+    e.target.disabled = true;
+    try {
+      visits = await githubSave(list => list.filter(x => x.id !== delId), `Delete buffet: ${v.name}`);
+      render();
+      toast('Deleted. Other devices update in about a minute.');
+    } catch (err) {
+      e.target.disabled = false;
+      alert(friendlyError(err));
+    }
+  }
 });
 
 // ---------- add / edit ----------
 const dialog = document.getElementById('visit-dialog');
 const form = document.getElementById('visit-form');
 const status = document.getElementById('form-status');
+const saveBtn = document.getElementById('save-btn');
 
 function openDialog(v) {
   editingId = v ? v.id : null;
   form.reset();
   status.textContent = '';
+  saveBtn.disabled = false;
   document.getElementById('dialog-title').textContent = v ? 'Edit buffet' : 'Add buffet';
   const f = form.elements;
   f.date.value = v?.date ?? new Date().toISOString().slice(0, 10);
@@ -171,6 +249,8 @@ document.getElementById('cancel-btn').addEventListener('click', () => dialog.clo
 
 // Free geocoding via OpenStreetMap Nominatim (light use only).
 async function geocode(address) {
+  const coords = parseCoords(address);
+  if (coords) return coords;
   const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=us&q=' + encodeURIComponent(address);
   const res = await fetch(url, { headers: { Accept: 'application/json' } });
   if (!res.ok) throw new Error('Geocoding failed');
@@ -195,28 +275,39 @@ form.addEventListener('submit', async e => {
     lat: f.lat.value === '' ? null : +f.lat.value,
     lng: f.lng.value === '' ? null : +f.lng.value,
   };
+  saveBtn.disabled = true;
+
   // Look up the pin if there is none, or if the address changed but the pin was not edited by hand.
   const addressChanged = v.address !== form.dataset.origAddress;
   const pinUntouched = f.lat.value === form.dataset.origLat && f.lng.value === form.dataset.origLng;
+  let warning = '';
   if (v.lat === null || v.lng === null || (addressChanged && pinUntouched)) {
     status.textContent = 'Finding address on the map…';
-    document.getElementById('save-btn').disabled = true;
     try {
       const loc = await geocode(v.address);
       if (loc) Object.assign(v, loc);
-      else status.textContent = "Couldn't find that address. Saved without a map pin; you can enter lat/long manually.";
+      else warning = "Couldn't find that address on the map. You can edit it and enter lat/long by hand.";
     } catch {
-      status.textContent = "Couldn't reach the map service. Saved without a map pin.";
+      warning = "Couldn't reach the map service, so this buffet has no map pin yet.";
     }
-    document.getElementById('save-btn').disabled = false;
   }
-  const i = visits.findIndex(x => x.id === v.id);
-  if (i >= 0) visits[i] = v; else visits.push(v);
-  commit();
-  if (Number.isFinite(v.lat)) dialog.close();
+
+  status.textContent = 'Saving to GitHub…';
+  try {
+    visits = await githubSave(
+      list => [...list.filter(x => x.id !== v.id), v],
+      `${editingId ? 'Update' : 'Add'} buffet: ${v.name}`,
+    );
+    render();
+    dialog.close();
+    toast(warning || 'Saved! Other devices update in about a minute.', warning ? 6000 : 3500);
+  } catch (err) {
+    status.textContent = friendlyError(err);
+    saveBtn.disabled = false;
+  }
 });
 
-// ---------- import / export / demo ----------
+// ---------- import / export ----------
 document.getElementById('export-btn').addEventListener('click', () => {
   const blob = new Blob([JSON.stringify(chronological(), null, 2)], { type: 'application/json' });
   const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: 'mullet-buffets.json' });
@@ -225,28 +316,72 @@ document.getElementById('export-btn').addEventListener('click', () => {
 });
 document.getElementById('import-file').addEventListener('change', async e => {
   const file = e.target.files[0];
-  if (!file) return;
-  try {
-    const data = JSON.parse(await file.text());
-    if (!Array.isArray(data)) throw new Error();
-    visits = data;
-    commit(true);
-  } catch { alert('That file is not a valid buffet export.'); }
   e.target.value = '';
+  if (!file) return;
+  let data;
+  try {
+    data = JSON.parse(await file.text());
+    if (!Array.isArray(data)) throw new Error();
+  } catch { return alert('That file is not a valid buffet export.'); }
+  if (!confirm(`Replace the whole buffet list (${visits.length} buffets) with the ${data.length} in this file?`)) return;
+  try {
+    visits = await githubSave(() => data, `Import ${data.length} buffets`);
+    render(true);
+    toast('Imported.');
+  } catch (err) { alert(friendlyError(err)); }
 });
-document.getElementById('demo-btn').addEventListener('click', async () => {
-  if (visits.length && !confirm('Replace your current list with demo data?')) return;
-  const res = await fetch('data/demo.json');
-  visits = await res.json();
-  commit(true);
+
+// ---------- editor sign-in ----------
+const editorDialog = document.getElementById('editor-dialog');
+const editorStatus = document.getElementById('editor-status');
+function openEditorDialog() {
+  const signedIn = !!token;
+  document.getElementById('editor-signed-out').hidden = signedIn;
+  document.getElementById('editor-signed-in').hidden = !signedIn;
+  document.getElementById('editor-signin').hidden = signedIn;
+  document.getElementById('editor-signout').hidden = !signedIn;
+  editorStatus.textContent = '';
+  document.getElementById('editor-form').reset();
+  editorDialog.showModal();
+}
+document.getElementById('editor-btn').addEventListener('click', openEditorDialog);
+document.getElementById('editor-close').addEventListener('click', () => editorDialog.close());
+document.getElementById('editor-signout').addEventListener('click', () => {
+  writeToken('');
+  editorDialog.close();
+  toast('Signed out on this device.');
+});
+document.getElementById('editor-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const t = e.target.elements.token.value.trim();
+  if (!t) return;
+  editorStatus.textContent = 'Checking token…';
+  const prev = token;
+  token = t;
+  try {
+    // A token that can read the file AND push to the repo is good to go.
+    const res = await fetch(`https://api.github.com/repos/${REPO}`, { headers: { Authorization: `Bearer ${t}` } });
+    const repo = res.ok ? await res.json() : null;
+    if (!repo?.permissions?.push) throw new Error('auth');
+    visits = (await githubGet()).list;
+    writeToken(t);
+    render(true);
+    editorDialog.close();
+    toast("Signed in. You can add and edit buffets on this device.");
+  } catch {
+    token = prev;
+    editorStatus.textContent = "That token didn't work. It needs Contents: Read and write access to the MR-repos repo.";
+  }
 });
 
 // ---------- boot ----------
-function commit(refit) {
-  save();
+function render(refit) {
   renderStats();
   renderTable();
   renderMap();
   if (refit) fitMap();
 }
-commit(true);
+writeToken(token);
+loadVisits()
+  .then(list => { visits = Array.isArray(list) ? list : []; render(true); })
+  .catch(() => { render(true); toast("Couldn't load the buffet list."); });

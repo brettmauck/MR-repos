@@ -1,0 +1,44 @@
+[
+  {
+    "id": "497a7a5e-d028-4d72-bb2e-e606311bd239",
+    "date": "2026-05-20",
+    "name": "Ginza Buffet",
+    "address": "39.19265,-84.24423",
+    "yelp": 4.8,
+    "mullet": 4.8,
+    "gooning": true,
+    "pizza": true,
+    "cost": 0,
+    "link": "https://www.instagram.com/reel/DYk8tRQuGnD/?mdxt=MWM1M2x0cmtoajN2bw==",
+    "lat": 39.1924046,
+    "lng": -84.244196
+  },
+  {
+    "id": "e608f1e7-b3d9-46fe-a81e-fac5b8802512",
+    "date": "2026-05-26",
+    "name": "China Garden Buffet",
+    "address": "39.2901393, -84.5210250",
+    "yelp": 2.8,
+    "mullet": 1.5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 0,
+    "link": "https://www.instagram.com/reel/DY0wwyMuani/?srtk=ZGVqYTh2eDJpM2Z1",
+    "lat": 39.2902384,
+    "lng": -84.5205258
+  },
+  {
+    "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
+    "date": "2026-10-27",
+    "name": "Nuevo China Buffet",
+    "address": "139 W North Ave, Northlake, IL 60164",
+    "yelp": 3,
+    "mullet": 3.5,
+    "gooning": true,
+    "pizza": true,
+    "cost": 41.7,
+    "link": "https://www.instagram.com/reel/DfBP3riRrTs/?vrfl=NWplbm83YjBqam1n",
+    "lat": 41.9071045,
+    "lng": -87.9120346
+  }
+]

@@ -6,11 +6,14 @@ Tracks Mullet Reviews' Chinese-buffet tour across the US.
 - **Buffet Log tab**: a sortable table with date, name, address, Yelp ★, Mullet ★, delta (Mullet − Yelp), gooning / not gooning, pizza on the buffet, and cost for 2.
 - Summary stats across the top (buffets, states, average ratings and delta, % gooning, % pizza, average cost).
 
-## Using it
-Open `index.html` through any static web server (e.g. `python3 -m http.server`) or host it free on GitHub Pages.
+## Where the data lives
+The buffet list is `data/buffets.json` in this repo, so every device and every visitor sees the same list.
 
-Addresses are turned into map pins automatically (free OpenStreetMap lookup). If one can't be found, enter latitude/longitude by hand under "Map location".
+- **Visitors** see the app read-only.
+- **The editor** taps 🔑 and pastes a GitHub token once per device. Then Add / Edit / Delete save straight to `data/buffets.json` as a commit. Other devices see the change about a minute later, once GitHub Pages refreshes.
 
-Data is saved in your browser. Use **Export JSON** to back it up and **Import JSON** to load it on another device. "Load demo data" fills in fake sample buffets to try things out.
+Creating the token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Under Repository access pick *Only select repositories → MR-repos*. Under Permissions → Repository permissions set **Contents: Read and write**.
 
-No build step: plain HTML/CSS/JS plus [Leaflet](https://leafletjs.com) for the map.
+Addresses are turned into map pins automatically (free OpenStreetMap lookup). You can also type coordinates like `39.19, -84.24` as the address. If an address can't be found, enter latitude/longitude by hand under "Map location".
+
+No build step: plain HTML/CSS/JS plus [Leaflet](https://leafletjs.com) for the map, hosted on GitHub Pages.

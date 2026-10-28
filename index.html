@@ -13,6 +13,7 @@
     <nav>
       <button class="tab active" data-tab="map">Map</button>
       <button class="tab" data-tab="log">Buffet Log</button>
+      <button id="editor-btn" title="Editor sign-in">🔑</button>
     </nav>
   </header>
 
@@ -26,10 +27,9 @@
 
     <section id="tab-log" class="panel">
       <div class="toolbar">
-        <button id="add-btn" class="primary">+ Add buffet</button>
+        <button id="add-btn" class="primary editor-only">+ Add buffet</button>
         <button id="export-btn">Export JSON</button>
-        <label class="file-btn">Import JSON<input type="file" id="import-file" accept="application/json" hidden></label>
-        <button id="demo-btn">Load demo data</button>
+        <label class="file-btn editor-only">Import JSON<input type="file" id="import-file" accept="application/json" hidden></label>
       </div>
       <div class="table-wrap">
         <table id="log-table">
@@ -45,7 +45,7 @@
               <th data-sort="gooning">Gooning?</th>
               <th data-sort="pizza">Pizza?</th>
               <th data-sort="cost">Cost (2 ppl)</th>
-              <th></th>
+              <th class="editor-only"></th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -86,6 +86,25 @@
       <div class="dialog-actions">
         <button type="button" id="cancel-btn">Cancel</button>
         <button type="submit" class="primary" id="save-btn">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="editor-dialog">
+    <form id="editor-form" method="dialog">
+      <h2>Editor sign-in</h2>
+      <div id="editor-signed-out">
+        <p class="hint">Paste your GitHub access token to add and edit buffets from this device. Everyone else sees the app read-only.</p>
+        <label>GitHub token <input type="password" name="token" autocomplete="off" placeholder="github_pat_..."></label>
+      </div>
+      <div id="editor-signed-in">
+        <p>✅ You're signed in as editor on this device.</p>
+      </div>
+      <p class="form-status" id="editor-status"></p>
+      <div class="dialog-actions">
+        <button type="button" id="editor-close">Close</button>
+        <button type="button" id="editor-signout">Sign out</button>
+        <button type="submit" class="primary" id="editor-signin">Sign in</button>
       </div>
     </form>
   </dialog>
