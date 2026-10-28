@@ -16,10 +16,15 @@ let token = readToken();
 // ---------- helpers ----------
 const byDate = (a, b) => (a.date || '').localeCompare(b.date || '');
 const chronological = () => [...visits].sort(byDate);
-const delta = v => +(v.mullet - v.yelp).toFixed(1);
+// Any metric can be null, meaning "not tracked" in that review. Nulls are left out of averages.
+const known = x => x !== null && x !== undefined && x !== '';
+const delta = v => known(v.mullet) && known(v.yelp) ? +(v.mullet - v.yelp).toFixed(1) : null;
 const fmtMoney = n => '$' + Number(n).toFixed(2);
 const fmtDelta = d => (d > 0 ? '+' : '') + d.toFixed(1);
 const avg = arr => arr.length ? arr.reduce((s, x) => s + x, 0) / arr.length : 0;
+const NA = '<span class="na">—</span>';
+const numOrNull = s => s === '' ? null : +s;
+const boolOrNull = s => s === '' ? null : s === 'true';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const stateOf = addr => {
   const m = String(addr).match(/,\s*([A-Z]{2})\b(?:\s+\d{5})?\s*$/);
@@ -105,18 +110,24 @@ document.querySelectorAll('.tab').forEach(btn => btn.addEventListener('click', (
 function renderStats() {
   const states = new Set(visits.map(v => stateOf(v.address)).filter(Boolean));
   const n = visits.length;
+  // Each metric uses only the buffets where it was tracked; "x of n" shows when some are missing.
+  const metric = (label, values, fmt) => {
+    const vals = values.filter(known);
+    return [label, vals.length ? fmt(vals) : '–', vals.length < n ? `based on ${vals.length} of ${n}` : ''];
+  };
+  const pct = vals => Math.round(100 * vals.filter(Boolean).length / vals.length) + '%';
   const items = [
-    ['Buffets', n],
-    ['States', states.size],
-    ['Avg Mullet ★', n ? avg(visits.map(v => v.mullet)).toFixed(2) : '–'],
-    ['Avg Yelp ★', n ? avg(visits.map(v => v.yelp)).toFixed(2) : '–'],
-    ['Avg Δ', n ? fmtDelta(avg(visits.map(delta))) : '–'],
-    ['Gooning', n ? Math.round(100 * visits.filter(v => v.gooning).length / n) + '%' : '–'],
-    ['Pizza', n ? Math.round(100 * visits.filter(v => v.pizza).length / n) + '%' : '–'],
-    ['Avg cost (2)', n ? fmtMoney(avg(visits.map(v => +v.cost))) : '–'],
+    ['Buffets', n, ''],
+    ['States', states.size, ''],
+    metric('Avg Mullet ★', visits.map(v => v.mullet), vals => avg(vals).toFixed(2)),
+    metric('Avg Yelp ★', visits.map(v => v.yelp), vals => avg(vals).toFixed(2)),
+    metric('Avg Δ', visits.map(delta), vals => fmtDelta(avg(vals))),
+    metric('Gooning', visits.map(v => v.gooning), pct),
+    metric('Pizza', visits.map(v => v.pizza), pct),
+    metric('Avg cost (2)', visits.map(v => v.cost), vals => fmtMoney(avg(vals))),
   ];
   document.getElementById('stats').innerHTML = items
-    .map(([l, v]) => `<div class="stat"><div class="label">${l}</div><div class="value">${v}</div></div>`).join('');
+    .map(([l, v, sub]) => `<div class="stat"><div class="label">${l}</div><div class="value">${v}</div>${sub ? `<div class="sub">${sub}</div>` : ''}</div>`).join('');
 }
 
 // ---------- map ----------
@@ -133,9 +144,9 @@ function popupHtml(v, n) {
   return `<h3>#${n} ${esc(v.name)}</h3>
     <div>${esc(v.address)}</div>
     <div>${esc(v.date)}</div>
-    <div>Yelp ${v.yelp}★ · Mullet ${v.mullet}★ · Δ <b>${fmtDelta(d)}</b></div>
-    <div>${v.gooning ? '🔥 Gooning' : '🚫 Not gooning'} · ${v.pizza ? '🍕 Pizza' : 'No pizza'}</div>
-    <div>${fmtMoney(v.cost)} for 2</div>
+    <div>Yelp ${known(v.yelp) ? v.yelp + '★' : '—'} · Mullet ${known(v.mullet) ? v.mullet + '★' : '—'} · Δ <b>${d === null ? '—' : fmtDelta(d)}</b></div>
+    <div>${v.gooning === null || v.gooning === undefined ? 'Gooning: —' : v.gooning ? '🔥 Gooning' : '🚫 Not gooning'} · ${v.pizza === null || v.pizza === undefined ? 'Pizza: —' : v.pizza ? '🍕 Pizza' : 'No pizza'}</div>
+    <div>${known(v.cost) ? fmtMoney(v.cost) + ' for 2' : 'Cost: —'}</div>
     ${v.link ? `<div><a href="${esc(v.link)}" target="_blank" rel="noopener">Watch the review</a></div>` : ''}`;
 }
 
@@ -168,6 +179,7 @@ function renderTable() {
   const val = (v, k) => k === 'order' ? order.get(v.id) : k === 'delta' ? delta(v) : v[k];
   const rows = [...visits].sort((a, b) => {
     const x = val(a, sortKey), y = val(b, sortKey);
+    if (!known(x) || !known(y)) return known(x) ? -1 : known(y) ? 1 : 0;
     return (x > y ? 1 : x < y ? -1 : 0) * sortDir;
   });
   document.querySelectorAll('th[data-sort]').forEach(th => {
@@ -181,12 +193,12 @@ function renderTable() {
       <td>${esc(v.date)}</td>
       <td>${v.link ? `<a href="${esc(v.link)}" target="_blank" rel="noopener">${esc(v.name)}</a>` : esc(v.name)}</td>
       <td class="addr">${esc(v.address)}${Number.isFinite(v.lat) ? '' : ' <span class="no-loc">(not on map)</span>'}</td>
-      <td class="num">${Number(v.yelp).toFixed(1)}</td>
-      <td class="num">${Number(v.mullet).toFixed(1)}</td>
-      <td class="num ${d > 0 ? 'delta-pos' : d < 0 ? 'delta-neg' : ''}">${fmtDelta(d)}</td>
-      <td><span class="pill ${v.gooning ? 'yes' : ''}">${v.gooning ? 'Gooning' : 'Not gooning'}</span></td>
-      <td><span class="pill ${v.pizza ? 'yes' : ''}">${v.pizza ? '🍕 Yes' : 'No'}</span></td>
-      <td class="num">${fmtMoney(v.cost)}</td>
+      <td class="num">${known(v.yelp) ? Number(v.yelp).toFixed(1) : NA}</td>
+      <td class="num">${known(v.mullet) ? Number(v.mullet).toFixed(1) : NA}</td>
+      <td class="num ${d > 0 ? 'delta-pos' : d < 0 ? 'delta-neg' : ''}">${d === null ? NA : fmtDelta(d)}</td>
+      <td>${known(v.gooning) ? `<span class="pill ${v.gooning ? 'yes' : ''}">${v.gooning ? 'Gooning' : 'Not gooning'}</span>` : NA}</td>
+      <td>${known(v.pizza) ? `<span class="pill ${v.pizza ? 'yes' : ''}">${v.pizza ? '🍕 Yes' : 'No'}</span>` : NA}</td>
+      <td class="num">${known(v.cost) ? fmtMoney(v.cost) : NA}</td>
       <td class="row-actions editor-only"><button data-edit="${esc(v.id)}">Edit</button> <button data-del="${esc(v.id)}">Delete</button></td>
     </tr>`;
   }).join('');
@@ -233,8 +245,8 @@ function openDialog(v) {
   f.address.value = v?.address ?? '';
   f.yelp.value = v?.yelp ?? '';
   f.mullet.value = v?.mullet ?? '';
-  f.gooning.value = String(v?.gooning ?? true);
-  f.pizza.value = String(v?.pizza ?? false);
+  f.gooning.value = known(v?.gooning) ? String(v.gooning) : '';
+  f.pizza.value = known(v?.pizza) ? String(v.pizza) : '';
   f.cost.value = v?.cost ?? '';
   f.link.value = v?.link ?? '';
   f.lat.value = v?.lat ?? '';
@@ -266,11 +278,11 @@ form.addEventListener('submit', async e => {
     date: f.date.value,
     name: f.name.value.trim(),
     address: f.address.value.trim(),
-    yelp: +f.yelp.value,
-    mullet: +f.mullet.value,
-    gooning: f.gooning.value === 'true',
-    pizza: f.pizza.value === 'true',
-    cost: +f.cost.value,
+    yelp: numOrNull(f.yelp.value),
+    mullet: numOrNull(f.mullet.value),
+    gooning: boolOrNull(f.gooning.value),
+    pizza: boolOrNull(f.pizza.value),
+    cost: numOrNull(f.cost.value),
     link: f.link.value.trim(),
     lat: f.lat.value === '' ? null : +f.lat.value,
     lng: f.lng.value === '' ? null : +f.lng.value,

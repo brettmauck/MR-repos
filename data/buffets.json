@@ -8,7 +8,7 @@
     "mullet": 4.8,
     "gooning": true,
     "pizza": true,
-    "cost": 0,
+    "cost": null,
     "link": "https://www.instagram.com/reel/DYk8tRQuGnD/?mdxt=MWM1M2x0cmtoajN2bw==",
     "lat": 39.1924046,
     "lng": -84.244196
@@ -22,7 +22,7 @@
     "mullet": 1.5,
     "gooning": true,
     "pizza": false,
-    "cost": 0,
+    "cost": null,
     "link": "https://www.instagram.com/reel/DY0wwyMuani/?srtk=ZGVqYTh2eDJpM2Z1",
     "lat": 39.2902384,
     "lng": -84.5205258

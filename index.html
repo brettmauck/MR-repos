@@ -62,18 +62,19 @@
       <label>Buffet name <input type="text" name="name" required></label>
       <label>Buffet address <input type="text" name="address" required placeholder="123 Main St, Springfield, IL"></label>
       <div class="row">
-        <label>Yelp rating <input type="number" name="yelp" min="0" max="5" step="0.1" required></label>
-        <label>Mullet rating <input type="number" name="mullet" min="0" max="5" step="0.1" required></label>
+        <label>Yelp rating <input type="number" name="yelp" min="0" max="5" step="0.1" placeholder="Not tracked"></label>
+        <label>Mullet rating <input type="number" name="mullet" min="0" max="5" step="0.1" placeholder="Not tracked"></label>
       </div>
       <div class="row">
         <label>Gooning?
-          <select name="gooning"><option value="true">Gooning</option><option value="false">Not gooning</option></select>
+          <select name="gooning"><option value="">Not tracked</option><option value="true">Gooning</option><option value="false">Not gooning</option></select>
         </label>
         <label>Pizza on buffet?
-          <select name="pizza"><option value="true">Yes</option><option value="false">No</option></select>
+          <select name="pizza"><option value="">Not tracked</option><option value="true">Yes</option><option value="false">No</option></select>
         </label>
       </div>
-      <label>Cost for 2 ($) <input type="number" name="cost" min="0" step="0.01" required></label>
+      <label>Cost for 2 ($) <input type="number" name="cost" min="0" step="0.01" placeholder="Not tracked"></label>
+      <p class="hint form-note">Leave a rating or cost blank (or pick "Not tracked") if the review didn't cover it. It will show as — and won't count toward the averages.</p>
       <label>Instagram link (optional) <input type="url" name="link" placeholder="https://instagram.com/..."></label>
       <details>
         <summary>Map location (auto-filled from address)</summary>
