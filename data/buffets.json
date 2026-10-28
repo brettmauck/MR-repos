@@ -403,6 +403,21 @@
     "lng": -84.268326968257
   },
   {
+    "id": "bc346a90-694d-4c68-8467-5d95f5e5dafa",
+    "date": "2026-06-30",
+    "name": "Yami Grill Hibachi & Sushi Buffet",
+    "address": "8870 Kingsridge Dr, Dayton, OH 45458",
+    "yelp": 4,
+    "mullet": 3.5,
+    "gooning": true,
+    "pizza": true,
+    "cost": 49.43,
+    "link": "https://www.instagram.com/reel/DaOxELNuamq/?cplk=dHJ5aHp2NDEwNXVp",
+    "fortune": "",
+    "lat": 39.629944481584,
+    "lng": -84.218314132772
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
