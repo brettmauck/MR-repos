@@ -42,6 +42,20 @@
     "lng": -84.467182099043
   },
   {
+    "id": "3d1eb916-c964-43a2-a901-71da85c4ee6e",
+    "date": "2026-06-01",
+    "name": "Golden Dragon Buffet",
+    "address": "86 N Brookwood Ave, Hamilton, OH 45013",
+    "yelp": 3.3,
+    "mullet": 5,
+    "gooning": true,
+    "pizza": null,
+    "cost": null,
+    "link": "https://www.instagram.com/reel/DZEJHYhOifB/?srtk=aXpvYzJqdXRhdzht",
+    "lat": 39.421977058619,
+    "lng": -84.587542745186
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
@@ -54,19 +68,5 @@
     "link": "https://www.instagram.com/reel/DfBP3riRrTs/?vrfl=NWplbm83YjBqam1n",
     "lat": 41.9071045,
     "lng": -87.9120346
-  },
-  {
-    "id": "3d1eb916-c964-43a2-a901-71da85c4ee6e",
-    "date": "2026-10-28",
-    "name": "Golden Dragon Buffet",
-    "address": "86 N Brookwood Ave, Hamilton, OH 45013",
-    "yelp": 3.3,
-    "mullet": 5,
-    "gooning": true,
-    "pizza": null,
-    "cost": null,
-    "link": "https://www.instagram.com/reel/DZEJHYhOifB/?srtk=aXpvYzJqdXRhdzht",
-    "lat": 39.421977058619,
-    "lng": -84.587542745186
   }
 ]
