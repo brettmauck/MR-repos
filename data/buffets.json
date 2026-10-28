@@ -388,6 +388,21 @@
     "lng": -84.2339335
   },
   {
+    "id": "01c876be-a8d9-495b-877d-ae70b8c9125e",
+    "date": "2026-06-29",
+    "name": "Human House Buffet",
+    "address": "1228 E Central Ave #3573, Miamisburg, OH 45342",
+    "yelp": 1.8,
+    "mullet": 2.5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 33.16,
+    "link": "https://www.instagram.com/reel/DaL_2M-ugbS/?srtk=MXRycGc2dGo3bjRxMQ==",
+    "fortune": "True friends are the keeper of your secrets.",
+    "lat": 39.640680530337,
+    "lng": -84.268326968257
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
