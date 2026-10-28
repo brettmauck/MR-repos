@@ -28,6 +28,20 @@
     "lng": -84.5205258
   },
   {
+    "id": "a7381c90-ad3e-40f8-9f24-f60083eaa251",
+    "date": "2026-05-28",
+    "name": "Jade Buffet",
+    "address": "11499 Princeton Pike, Cincinnati, OH 45246",
+    "yelp": 2.6,
+    "mullet": 3,
+    "gooning": null,
+    "pizza": null,
+    "cost": null,
+    "link": "https://www.instagram.com/reel/DY5kSXpuUyS/?xtok=MWxocXRiOXQ3OGFl",
+    "lat": null,
+    "lng": null
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
