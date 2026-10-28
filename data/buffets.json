@@ -253,6 +253,21 @@
     "lng": -83.150825319811
   },
   {
+    "id": "da27b2df-7974-4d8b-af56-bd27eed6c28c",
+    "date": "2026-06-18",
+    "name": "City Buffet",
+    "address": "3670 Soldano Boulevard, Columbus, OH 43204",
+    "yelp": 4,
+    "mullet": 5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 34.54,
+    "link": "https://www.instagram.com/reel/DZv9wGYux5w/?obrf=dTFsbHAwdm54NDhk",
+    "fortune": "",
+    "lat": 39.956536193029,
+    "lng": -83.095981527764
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
