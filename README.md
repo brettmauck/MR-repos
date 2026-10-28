@@ -14,6 +14,6 @@ The buffet list is `data/buffets.json` in this repo, so every device and every v
 
 Creating the token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Under Repository access pick *Only select repositories → MR-repos*. Under Permissions → Repository permissions set **Contents: Read and write**.
 
-Addresses are turned into map pins automatically (free OpenStreetMap lookup). You can also type coordinates like `39.19, -84.24` as the address. If an address can't be found, enter latitude/longitude by hand under "Map location".
+Addresses are turned into map pins automatically. The app tries the US Census Bureau geocoder, then OpenStreetMap, then Photon (all free, no key), and if none finds the exact street it pins the town/ZIP and says so. You can also type coordinates like `39.19, -84.24` as the address. If an address can't be found, enter latitude/longitude by hand under "Map location".
 
 No build step: plain HTML/CSS/JS plus [Leaflet](https://leafletjs.com) for the map, hosted on GitHub Pages.

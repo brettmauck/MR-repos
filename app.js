@@ -266,15 +266,80 @@ function openDialog(v) {
 document.getElementById('add-btn').addEventListener('click', () => openDialog(null));
 document.getElementById('cancel-btn').addEventListener('click', () => dialog.close());
 
-// Free geocoding via OpenStreetMap Nominatim (light use only).
+// ---------- address lookup ----------
+// Tries several free services in turn. Returns { lat, lng, approx } or null.
+// approx = true means only the city/ZIP was found, not the exact street address.
+
+// Suite/unit numbers confuse most lookups, so drop them: "123 Main St Ste 4, Town, ST" -> "123 Main St, Town, ST".
+const cleanAddress = a => a.replace(/\s*(?:,\s*)?(?:#\s*|\b(?:suite|ste|unit|apt|bldg|building)\b\.?\s+)[\w-]*\d[\w-]*/gi, '').replace(/\s+,/g, ',').trim();
+
+function withTimeout(promise, ms = 8000) {
+  return Promise.race([promise, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), ms))]);
+}
+
+// US Census Bureau geocoder: free, no key, very good for US street addresses.
+// It doesn't allow normal cross-site requests, so it is called with a <script> tag (JSONP).
+function censusLookup(address) {
+  return withTimeout(new Promise((resolve, reject) => {
+    const cb = 'censusCb' + Date.now() + Math.floor(Math.random() * 1e6);
+    const script = document.createElement('script');
+    const done = () => { delete window[cb]; script.remove(); };
+    window[cb] = data => {
+      done();
+      const m = data?.result?.addressMatches?.[0];
+      resolve(m ? { lat: m.coordinates.y, lng: m.coordinates.x } : null);
+    };
+    script.onerror = () => { done(); reject(new Error('census failed')); };
+    script.src = 'https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&format=jsonp'
+      + '&callback=' + cb + '&address=' + encodeURIComponent(address);
+    document.head.appendChild(script);
+  }));
+}
+
+// OpenStreetMap Nominatim (light use only).
+async function nominatimLookup(query) {
+  const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=us&q=' + encodeURIComponent(query);
+  const res = await withTimeout(fetch(url, { headers: { Accept: 'application/json' } }));
+  if (!res.ok) throw new Error('nominatim failed');
+  const [hit] = await res.json();
+  return hit ? { lat: +hit.lat, lng: +hit.lon } : null;
+}
+
+// Photon: OpenStreetMap-based search that is more forgiving with typos and formatting.
+async function photonLookup(query) {
+  const url = 'https://photon.komoot.io/api/?limit=1&lang=en&q=' + encodeURIComponent(query);
+  const res = await withTimeout(fetch(url));
+  if (!res.ok) throw new Error('photon failed');
+  const hit = (await res.json()).features?.find(f => f.properties?.countrycode === 'US');
+  return hit ? { lat: hit.geometry.coordinates[1], lng: hit.geometry.coordinates[0] } : null;
+}
+
 async function geocode(address) {
   const coords = parseCoords(address);
   if (coords) return coords;
-  const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=us&q=' + encodeURIComponent(address);
-  const res = await fetch(url, { headers: { Accept: 'application/json' } });
-  if (!res.ok) throw new Error('Geocoding failed');
-  const [hit] = await res.json();
-  return hit ? { lat: +hit.lat, lng: +hit.lon } : null;
+  const clean = cleanAddress(address);
+  const exact = [() => censusLookup(clean), () => nominatimLookup(clean), () => photonLookup(clean)];
+  let reached = false;
+  for (const lookup of exact) {
+    try {
+      const hit = await lookup();
+      reached = true;
+      if (hit) return hit;
+    } catch { /* service down or blocked: try the next one */ }
+  }
+  // Last resort: just the town/state/ZIP (everything after the street part).
+  const area = clean.split(',').slice(1).join(',').trim();
+  if (area) {
+    for (const lookup of [() => nominatimLookup(area), () => photonLookup(area)]) {
+      try {
+        const hit = await lookup();
+        reached = true;
+        if (hit) return { ...hit, approx: true };
+      } catch {}
+    }
+  }
+  if (!reached) throw new Error('No address lookup service could be reached');
+  return null;
 }
 
 form.addEventListener('submit', async e => {
@@ -304,7 +369,11 @@ form.addEventListener('submit', async e => {
     status.textContent = 'Finding address on the map…';
     try {
       const loc = await geocode(v.address);
-      if (loc) Object.assign(v, loc);
+      if (loc) {
+        v.lat = loc.lat;
+        v.lng = loc.lng;
+        if (loc.approx) warning = "Couldn't find the exact street address, so the pin is at the town/ZIP instead. You can fix it under Map location.";
+      }
       else warning = "Couldn't find that address on the map. You can edit it and enter lat/long by hand.";
     } catch {
       warning = "Couldn't reach the map service, so this buffet has no map pin yet.";
