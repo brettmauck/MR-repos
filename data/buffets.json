@@ -463,6 +463,21 @@
     "lng": -84.19203414989
   },
   {
+    "id": "7b02caa5-b58e-4558-a733-a57971ab5632",
+    "date": "2026-07-04",
+    "name": "King Buffet",
+    "address": "3020 Bardstown Rd, Louisville, KY 40205",
+    "yelp": 3.3,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": false,
+    "cost": 25.42,
+    "link": "https://www.instagram.com/reel/DaYUO11uY1R/?rpxt=YnM2cjBqMnJ5dXVq",
+    "fortune": "Opportunities to explore new horizons are coming soon",
+    "lat": 38.214299898849,
+    "lng": -85.673787420843
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
