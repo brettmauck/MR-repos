@@ -283,6 +283,21 @@
     "lng": -83.147513678692
   },
   {
+    "id": "e807084f-93b7-45d8-babd-1ecdf39a63cc",
+    "date": "2026-06-19",
+    "name": "The Feast Buffet",
+    "address": "2620 Bethel Rd, Columbus, OH 43235",
+    "yelp": 3.3,
+    "mullet": 3.3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 36.7,
+    "link": "https://www.instagram.com/reel/DZyvvoju5Dm/?dlrf=MWV5aXk5eTFpNWljZg==",
+    "fortune": "",
+    "lat": 40.064814247639,
+    "lng": -83.088162045314
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
