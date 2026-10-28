@@ -223,6 +223,21 @@
     "lng": -83.800665721086
   },
   {
+    "id": "17bfcea2-d9d8-4d6c-9112-ca7129a82021",
+    "date": "2026-06-15",
+    "name": "Hong Kong Buffet",
+    "address": "Ct Hs, 1142 Columbus Ave, Washington Court House, OH 43160",
+    "yelp": 3.9,
+    "mullet": 3.9,
+    "gooning": true,
+    "pizza": false,
+    "cost": 32.15,
+    "link": "https://www.instagram.com/reel/DZoccATuu6E/?rpxt=enEzc2pheHM3dXZm",
+    "fortune": "",
+    "lat": 39.545000162581,
+    "lng": -83.429122552657
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
