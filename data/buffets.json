@@ -328,6 +328,21 @@
     "lng": -82.973644652472
   },
   {
+    "id": "1725a755-2682-4b94-a51c-b7ca0a1932d1",
+    "date": "2026-06-23",
+    "name": "China Buffet",
+    "address": "1788 Morse Rd, Columbus, OH 43229",
+    "yelp": 2.5,
+    "mullet": 2.2,
+    "gooning": true,
+    "pizza": false,
+    "cost": null,
+    "link": "https://www.instagram.com/reel/DZ9BVASuI1B/?mdxt=dzhyZ3BldzFmcmd1",
+    "fortune": "Do not spend money you do not have.",
+    "lat": 40.060393252988,
+    "lng": -82.971339523584
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
