@@ -478,6 +478,21 @@
     "lng": -85.673787420843
   },
   {
+    "id": "d859dfa0-7d65-47c6-8043-42cfde08db67",
+    "date": "2026-07-05",
+    "name": "Jumbo Buffet",
+    "address": "2731 S Hurstbourne Pkwy, Louisville, KY 40220",
+    "yelp": 2.7,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 27.54,
+    "link": "https://www.instagram.com/reel/Daa0nQyuccJ/?dlrf=MTlrdTAwb2xvdTQwdQ==",
+    "fortune": "",
+    "lat": 38.211823727801,
+    "lng": -85.595834191736
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
