@@ -35,9 +35,10 @@
     "yelp": 2.6,
     "mullet": 3,
     "gooning": null,
-    "pizza": null,
+    "pizza": false,
     "cost": null,
     "link": "https://www.instagram.com/reel/DY5kSXpuUyS/?xtok=MWxocXRiOXQ3OGFl",
+    "fortune": "Your health will improve in April.",
     "lat": 39.286118961795,
     "lng": -84.467182099043
   },
