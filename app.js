@@ -60,8 +60,8 @@ async function githubGet() {
     headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' },
     cache: 'no-store',
   });
-  if (res.status === 401 || res.status === 403) throw new Error('auth');
-  if (!res.ok) throw new Error('GitHub read failed (' + res.status + ')');
+  if (res.status === 401) throw new Error('auth');
+  if (!res.ok) throw new Error('GitHub read failed (' + res.status + ': ' + ((await res.json().catch(() => ({}))).message || '') + ')');
   const body = await res.json();
   return { list: JSON.parse(fromBase64(body.content)), sha: body.sha };
 }
@@ -77,7 +77,12 @@ async function githubSave(change, message) {
       body: JSON.stringify({ message, branch: BRANCH, sha, content: toBase64(JSON.stringify(next, null, 2) + '\n') }),
     });
     if (res.ok) return next;
-    if (res.status === 401 || res.status === 403) throw new Error('auth');
+    if (res.status === 401) throw new Error('auth');
+    if (res.status === 403 || res.status === 404) {
+      // The token can read but GitHub won't let it write. Keep GitHub's own reason for troubleshooting.
+      const why = (await res.json().catch(() => ({}))).message || res.status;
+      throw new Error('write:' + why);
+    }
     if (res.status !== 409 && res.status !== 422) throw new Error('GitHub save failed (' + res.status + ')');
   }
   throw new Error('GitHub save failed (file kept changing)');
@@ -94,9 +99,11 @@ async function loadVisits() {
 }
 
 function friendlyError(e) {
-  return e.message === 'auth'
-    ? 'GitHub rejected your token. Check it has Contents: Read and write access to this repo.'
-    : "Couldn't save to GitHub: " + e.message;
+  if (e.message === 'auth') return 'GitHub says your token is invalid or expired. Tap 🔑, sign out, and sign in with a new token.';
+  if (e.message.startsWith('write:')) {
+    return "Your token can read the buffet list but isn't allowed to save it. On GitHub, edit the token and set Contents to \"Read and write\". (GitHub said: " + e.message.slice(6) + ')';
+  }
+  return "Couldn't save to GitHub: " + e.message;
 }
 
 // ---------- tabs ----------
