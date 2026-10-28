@@ -298,6 +298,21 @@
     "lng": -83.088162045314
   },
   {
+    "id": "f7dda279-8f7e-4a8f-a196-cfbb38629981",
+    "date": "2026-06-21",
+    "name": "Asian Star China Buffet",
+    "address": "2847 Festival Ln, Dublin, OH 43017",
+    "yelp": 3.3,
+    "mullet": 2.8,
+    "gooning": true,
+    "pizza": true,
+    "cost": 37.8,
+    "link": "https://www.instagram.com/reel/DZ3JfqAxQKr/?mdxt=MWlhNHJ2cWpxbDdxNA==",
+    "fortune": "A new and exciting opportunity will present itself this Friday.",
+    "lat": 40.092643650174,
+    "lng": -83.09103752103
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
