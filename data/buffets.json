@@ -148,6 +148,21 @@
     "lng": -84.350408089337
   },
   {
+    "id": "75e0e967-d0b7-4dd1-9882-bfc05847b7e3",
+    "date": "2026-06-08",
+    "name": "Grand Buffet",
+    "address": "391 W Eads Pkwy, Lawrenceburg, IN 47025",
+    "yelp": 2.6,
+    "mullet": 4.1,
+    "gooning": true,
+    "pizza": false,
+    "cost": null,
+    "link": "https://www.instagram.com/reel/DZWKW5nugAs/?mdxt=amZ4b3dpZHNzdWE2",
+    "fortune": "Strive for progress, not perfection.",
+    "lat": 39.094830376958,
+    "lng": -84.864559515501
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
