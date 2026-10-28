@@ -433,6 +433,21 @@
     "lng": -84.142045176842
   },
   {
+    "id": "bc30075f-fb26-4f84-8565-01cb0462f6af",
+    "date": "2026-07-02",
+    "name": "China Garden Buffet",
+    "address": "112 Woodman Dr, Dayton, OH 45431",
+    "yelp": 3,
+    "mullet": 2.5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 40.18,
+    "link": "https://www.instagram.com/reel/DaTmEHDB2EX/?xtok=MWVmbzBpNmF2OGhmNg==",
+    "fortune": "Your luck will brighten your life with positivity.",
+    "lat": 39.767721366724,
+    "lng": -84.123283111547
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
