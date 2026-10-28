@@ -193,6 +193,21 @@
     "lng": -84.26942028959
   },
   {
+    "id": "f0d62742-88a5-473c-8c60-cbd86aa3a173",
+    "date": "2026-06-12",
+    "name": "New China Buffet",
+    "address": "106 Pavilion Pkwy, Newport, KY 41071",
+    "yelp": 2.9,
+    "mullet": 5,
+    "gooning": true,
+    "pizza": true,
+    "cost": 36.75,
+    "link": "https://www.instagram.com/reel/DZgfj59utCr/?xtok=ajFneTMyb2YwZTRu",
+    "fortune": "You will become a vegetarian or vegan.",
+    "lat": 39.0867379,
+    "lng": -84.4771778
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
