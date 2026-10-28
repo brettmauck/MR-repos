@@ -343,6 +343,21 @@
     "lng": -82.971339523584
   },
   {
+    "id": "2b66a2b6-3bb2-404d-a6e3-a36eed0a067c",
+    "date": "2026-06-24",
+    "name": "Empire Buffet",
+    "address": "570 Clock Tower Way, Fort Mitchell, KY 41017",
+    "yelp": 2.5,
+    "mullet": 2.6,
+    "gooning": false,
+    "pizza": true,
+    "cost": 33.9,
+    "link": "https://www.instagram.com/reel/DZ_eaZPuwlx/?vrfl=MXZ6bGhwNTBtNHpmcQ==",
+    "fortune": "It is never too late to start",
+    "lat": 39.051148170437,
+    "lng": -84.573118352345
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
