@@ -70,6 +70,20 @@
     "lng": -84.556006738373
   },
   {
+    "id": "60a3e2fe-8c09-4dcd-99a4-d2269ade47f1",
+    "date": "2026-06-03",
+    "name": "Asian Buffet",
+    "address": "6310 S Gilmore Rd, Fairfield, OH 45014",
+    "yelp": 2.7,
+    "mullet": 2.1,
+    "gooning": null,
+    "pizza": true,
+    "cost": null,
+    "link": "https://www.instagram.com/reel/DZJQtp4OBeY/?xtok=MW9tZ3o2c3N5b3lwNQ==",
+    "lat": 39.304084184287,
+    "lng": -84.523588042867
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
