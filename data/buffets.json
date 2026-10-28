@@ -238,6 +238,21 @@
     "lng": -83.429122552657
   },
   {
+    "id": "37f3a0a5-7479-41d3-8f72-04abcf494ac8",
+    "date": "2026-06-16",
+    "name": "Asian Buffet",
+    "address": "5666 W Broad St, Galloway, OH 43119",
+    "yelp": 3.3,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 23.65,
+    "link": "https://www.instagram.com/reel/DZqu1f-ut0i/?mdxt=M2ZoY2pnbmhwcm01",
+    "fortune": "A lifetime of heartfelt compliments will boost your spirits.",
+    "lat": 39.951323557656,
+    "lng": -83.150825319811
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
