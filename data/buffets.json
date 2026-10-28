@@ -373,6 +373,21 @@
     "lng": -84.4016893
   },
   {
+    "id": "38688a4d-c152-4f23-93f2-a86b56ad5545",
+    "date": "2026-06-28",
+    "name": "China Garden Buffet",
+    "address": "675 W Central Ave, Springboro, OH 45066",
+    "yelp": 2.5,
+    "mullet": 3.8,
+    "gooning": true,
+    "pizza": false,
+    "cost": 31.44,
+    "link": "https://www.instagram.com/reel/DaJ4OGbuFrN/?xtok=a24zajlqaGJ4YXNn",
+    "fortune": "",
+    "lat": 39.5568642,
+    "lng": -84.2339335
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
