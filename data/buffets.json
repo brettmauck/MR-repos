@@ -553,6 +553,21 @@
     "lng": -85.83432973596
   },
   {
+    "id": "8b73b200-d0ca-4d68-8200-4d641befb773",
+    "date": "2026-07-11",
+    "name": "Hibachi Buffet",
+    "address": "5372 Dixie Hwy, Louisville, KY 40216",
+    "yelp": 3.7,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 30.71,
+    "link": "https://www.instagram.com/reel/DaqEaBeOfRX/?dlrf=MWFtdGpndHZmYWFpcg==",
+    "fortune": "",
+    "lat": 38.156439977109,
+    "lng": -85.834486464403
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
