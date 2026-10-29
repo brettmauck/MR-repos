@@ -1123,6 +1123,21 @@
     "lng": -81.5682558415
   },
   {
+    "id": "2d24a3ed-978e-41e6-aec2-ff24eec8d46b",
+    "date": "2026-08-23",
+    "name": "Merryland Express",
+    "address": "960 N Eisenhower Dr, Beckley, WV 25801",
+    "yelp": 2,
+    "mullet": 2.1,
+    "gooning": true,
+    "pizza": false,
+    "cost": 27.94,
+    "link": "https://www.instagram.com/reel/DcZUBZjxYpu/?cplk=MTcxemtmdDVlemdrZQ==",
+    "fortune": "Success won’t taste so good without failure as appetizers",
+    "lat": 37.792993631904,
+    "lng": -81.172765153203
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
