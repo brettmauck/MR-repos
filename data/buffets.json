@@ -1018,6 +1018,21 @@
     "lng": -83.614442056424
   },
   {
+    "id": "b8bcbb17-9180-43ba-9daa-22ca4953c424",
+    "date": "2026-08-15",
+    "name": "China One Buffet",
+    "address": "3040 Navarre Ave, Oregon, OH 43616",
+    "yelp": 3,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 30.15,
+    "link": "https://www.instagram.com/reel/DcE6ohoRJxV/?xtok=cGt3NWI1d3p1enh4",
+    "fortune": "This month you’ll experience moments of deep insight",
+    "lat": 41.636829598487,
+    "lng": -83.475335619707
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
