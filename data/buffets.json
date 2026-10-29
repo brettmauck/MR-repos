@@ -763,6 +763,21 @@
     "lng": -84.621618284148
   },
   {
+    "id": "f37a2d68-98f5-4323-9276-87a11ed62641",
+    "date": "2026-07-29",
+    "name": "Asian Cafe",
+    "address": "601 Colemans Crossing Blvd, Marysville, OH 43040",
+    "yelp": 3.2,
+    "mullet": 2.8,
+    "gooning": true,
+    "pizza": false,
+    "cost": 22.36,
+    "link": "https://www.instagram.com/reel/DbZt0xsObP-/?obrf=MW1ka3p3dWdpa2FtdQ==",
+    "fortune": "Your diligence in working hard will be your key to success… or as the hot blonde said it: “you diligence to working while hard will be your diligence to success.”",
+    "lat": 40.231627619374,
+    "lng": -83.342085924323
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
