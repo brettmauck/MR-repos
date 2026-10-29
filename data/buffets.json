@@ -958,6 +958,21 @@
     "lng": -84.065605
   },
   {
+    "id": "6fea92e1-9c59-4be6-ba87-7da1e601a8a0",
+    "date": "2026-08-11",
+    "name": "Royal Buffet",
+    "address": "2551 Tiffin Ave, Findlay, OH 45840",
+    "yelp": 2.6,
+    "mullet": 2.6,
+    "gooning": true,
+    "pizza": true,
+    "cost": 32.32,
+    "link": "https://www.instagram.com/reel/Db6n4abRRJM/?exln=MWQyYnU5N2Fta21qdw==",
+    "fortune": "",
+    "lat": 41.055602495327,
+    "lng": -83.593796826636
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
