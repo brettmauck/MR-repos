@@ -508,6 +508,21 @@
     "lng": -85.537510835256
   },
   {
+    "id": "bad5dd15-c5fe-4b13-ab71-4996a81ce990",
+    "date": "2026-07-07",
+    "name": "Golden Blossom Buffet",
+    "address": "2760 Jefferson Centre Way #5, Jeffersonville, IN 47130",
+    "yelp": 3.7,
+    "mullet": 3.7,
+    "gooning": true,
+    "pizza": false,
+    "cost": 32.08,
+    "link": "https://www.instagram.com/reel/Dagl86fu2l8/?exln=cXkzazF4dnZmaWtv",
+    "fortune": "The wisest owl hears all before he flies",
+    "lat": 38.326327650864,
+    "lng": -85.710556459175
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
