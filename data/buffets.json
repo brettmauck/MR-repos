@@ -523,6 +523,21 @@
     "lng": -85.710556459175
   },
   {
+    "id": "94f1dbdd-cbd0-4963-b3dc-eac1ec49c6e0",
+    "date": "2026-07-08",
+    "name": "Asian Buffet",
+    "address": "3813 Charlestown Rd, New Albany, IN 47150",
+    "yelp": 3,
+    "mullet": 3,
+    "gooning": false,
+    "pizza": false,
+    "cost": 36.36,
+    "link": "https://www.instagram.com/reel/DajWgrnuY-Z/?srtk=cDdlanRlZTF5NDlq",
+    "fortune": "",
+    "lat": 38.350044143812,
+    "lng": -85.795891801267
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
