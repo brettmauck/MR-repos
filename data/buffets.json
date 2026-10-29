@@ -568,6 +568,21 @@
     "lng": -85.834486464403
   },
   {
+    "id": "459722aa-a922-4792-9aea-fdb3a4fbe7c2",
+    "date": "2026-07-12",
+    "name": "Happy Dragon Buffet",
+    "address": "73 Broadway St, Dry Ridge, KY 41035",
+    "yelp": 4.1,
+    "mullet": 5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 36.97,
+    "link": "https://www.instagram.com/reel/DatXG6nxsOl/?obrf=cTc0NW9id28waXVi",
+    "fortune": "Today’s generosity will come back to you manifold",
+    "lat": 38.682083721622,
+    "lng": -84.59912736349
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
