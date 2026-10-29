@@ -973,6 +973,21 @@
     "lng": -83.593796826636
   },
   {
+    "id": "95308184-0811-4972-9739-c256d4bb316e",
+    "date": "2026-08-12",
+    "name": "Ocean Garden Buffet",
+    "address": "821 W Alexis Rd E19, Toledo, OH 43612",
+    "yelp": 3.6,
+    "mullet": 4.2,
+    "gooning": true,
+    "pizza": true,
+    "cost": 25.84,
+    "link": "https://www.instagram.com/reel/Db9L1zZRhtK/?obrf=MWp4aWpqdGpzb2J3Zg==",
+    "fortune": "Inner peace is found within; it’s a treasure worth seeking.",
+    "lat": 41.721579810342,
+    "lng": -83.562332760165
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
