@@ -538,6 +538,21 @@
     "lng": -85.795891801267
   },
   {
+    "id": "d9fd183f-1d31-4c25-9057-9bdee7950fbc",
+    "date": "2026-07-09",
+    "name": "Umami Buffet",
+    "address": "5362 Dixie Hwy, Louisville, KY 40216",
+    "yelp": 3.4,
+    "mullet": 2.8,
+    "gooning": false,
+    "pizza": true,
+    "cost": 30.71,
+    "link": "https://www.instagram.com/reel/DalfX5cxP0L/?rpxt=MTV4YWJrMGh4cmxwdQ==",
+    "fortune": "The bottom of the ladder is crowded, there’s plenty of room at the top.",
+    "lat": 38.156807973126,
+    "lng": -85.83432973596
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
