@@ -598,6 +598,21 @@
     "lng": -84.522543041704
   },
   {
+    "id": "e47fdb70-4908-4b92-9e3f-49818c9b7402",
+    "date": "2026-07-14",
+    "name": "New Ichiban Buffet",
+    "address": "960 N Main St, Nicholasville, KY 40356",
+    "yelp": 3,
+    "mullet": 2.7,
+    "gooning": true,
+    "pizza": false,
+    "cost": 27.8,
+    "link": "https://www.instagram.com/reel/DaykiSouMwJ/?xtok=dWNuNGF1ODF1dmw3",
+    "fortune": "",
+    "lat": 37.896469098205,
+    "lng": -84.56610647549
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
