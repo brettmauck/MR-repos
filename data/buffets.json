@@ -1048,6 +1048,21 @@
     "lng": -83.599051438289
   },
   {
+    "id": "3c764a55-8959-4e82-8305-ac2bdc96d1af",
+    "date": "2026-08-17",
+    "name": "Old Town Buffet",
+    "address": "1216 N Main St #101, Bowling Green, OH 43402",
+    "yelp": 3.2,
+    "mullet": 2.3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 32,
+    "link": "https://www.instagram.com/reel/DcJ8nuMRd0Y/?xtok=MTRweGVwOWVmZ3oyOA==",
+    "fortune": "Your Wednesday will be filled with exciting opportunities for adventure",
+    "lat": 41.397001315591,
+    "lng": -83.650547313503
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
