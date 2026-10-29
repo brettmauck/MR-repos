@@ -1003,6 +1003,21 @@
     "lng": -83.668118176444
   },
   {
+    "id": "8c6c9f64-6546-41b2-88a4-76ab7fa8bdff",
+    "date": "2026-08-15",
+    "name": "Hong Kong Buffet",
+    "address": "3015 Glendale Ave #300, Toledo, OH 43614",
+    "yelp": 3.7,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 25.84,
+    "link": "https://www.instagram.com/reel/DcEGm69OIp-/?vrfl=MXJ0aTNsYWpsNWx4NQ==",
+    "fortune": "",
+    "lat": 41.612175265489,
+    "lng": -83.614442056424
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
