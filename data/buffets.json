@@ -943,6 +943,21 @@
     "lng": -84.190641473404
   },
   {
+    "id": "935458af-4c00-482b-8dc7-acab9dd19796",
+    "date": "2026-08-10",
+    "name": "Asian Buffet",
+    "address": "2100 Harding Hwy, Lima, OH 45804",
+    "yelp": 2.5,
+    "mullet": 1,
+    "gooning": true,
+    "pizza": false,
+    "cost": 31,
+    "link": "https://www.instagram.com/reel/Db4D7Y-RqHh/?cplk=MXFxcW1kOGNicndwYg==",
+    "fortune": "There is a true and sincere friendship between you both",
+    "lat": 40.7399785,
+    "lng": -84.105006
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
