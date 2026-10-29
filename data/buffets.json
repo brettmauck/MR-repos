@@ -703,6 +703,21 @@
     "lng": -86.080018944929
   },
   {
+    "id": "da0a3b5e-55b2-4986-b242-327f6b0aeb2b",
+    "date": "2026-07-22",
+    "name": "Daily Buffet & Grill",
+    "address": "9701 E Washington St, Indianapolis, IN 46229",
+    "yelp": 2.7,
+    "mullet": 2.7,
+    "gooning": false,
+    "pizza": true,
+    "cost": 37.57,
+    "link": "https://www.instagram.com/reel/DbG_4mJB8Kx/?xtok=N3kwYm9xN2htbHQz",
+    "fortune": "",
+    "lat": 39.774583916695,
+    "lng": -85.995239048982
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
