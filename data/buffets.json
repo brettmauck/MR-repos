@@ -913,6 +913,21 @@
     "lng": -81.437836166959
   },
   {
+    "id": "4082a027-cc75-40d6-b190-b486d67b1ed4",
+    "date": "2026-08-08",
+    "name": "Golden Bowl Buffet",
+    "address": "15 S Weston Rd, Troy, OH 45373",
+    "yelp": 3.8,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": false,
+    "cost": 25.15,
+    "link": "https://www.instagram.com/reel/DbzEo-KufvQ/?mdxt=cmMyZXAzczhydzhn",
+    "fortune": "",
+    "lat": 40.049675209881,
+    "lng": -84.229569289201
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
