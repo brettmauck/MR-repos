@@ -928,6 +928,21 @@
     "lng": -84.229569289201
   },
   {
+    "id": "f8db66b6-cf6b-4245-afd8-b68b7c99106e",
+    "date": "2026-08-09",
+    "name": "Hong Kong Buffet & Grill",
+    "address": "2330 W Michigan St, Sidney, OH 45365",
+    "yelp": 3.6,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": false,
+    "cost": 24.67,
+    "link": "https://www.instagram.com/reel/Db1fKJjxCCl/?exln=MTVlaGxmank5ZWZycA==",
+    "fortune": "",
+    "lat": 40.287789524332,
+    "lng": -84.190641473404
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
