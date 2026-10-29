@@ -868,6 +868,21 @@
     "lng": -81.693659507055
   },
   {
+    "id": "9ab24b26-8641-4d68-9cfa-a869c1956afe",
+    "date": "2026-08-05",
+    "name": "Fun Buffet",
+    "address": "2695 Creekside Dr, Twinsburg, OH 44087",
+    "yelp": 2.9,
+    "mullet": 2.9,
+    "gooning": true,
+    "pizza": true,
+    "cost": 35.2,
+    "link": "https://www.instagram.com/reel/Dbrb1GHOykv/?rpxt=bXZ0djE0ZGg1azEx",
+    "fortune": "You will create a new recipe",
+    "lat": 41.307984056467,
+    "lng": -81.438037192266
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
