@@ -898,6 +898,21 @@
     "lng": -81.471426164142
   },
   {
+    "id": "6c067329-5b66-4060-ba70-79da5a14a596",
+    "date": "2026-08-07",
+    "name": "Katana Buffet",
+    "address": "4758 Everhard Rd NW, Canton, OH 44718",
+    "yelp": 2.5,
+    "mullet": 2,
+    "gooning": true,
+    "pizza": true,
+    "cost": 48.34,
+    "link": "https://www.instagram.com/reel/DbwN3c4Rwd-/?srtk=MTQzdHJzemxpbDhxZw==",
+    "fortune": "",
+    "lat": 40.854395288567,
+    "lng": -81.437836166959
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
