@@ -1033,6 +1033,21 @@
     "lng": -83.475335619707
   },
   {
+    "id": "313ecbd1-7df5-462d-a3a6-a85102026201",
+    "date": "2026-08-16",
+    "name": "China City Buffet",
+    "address": "27072 Carronade Dr Ste m, Perrysburg, OH 43551",
+    "yelp": 3,
+    "mullet": 3,
+    "gooning": false,
+    "pizza": true,
+    "cost": 35.74,
+    "link": "https://www.instagram.com/reel/DcHYTojRS-w/?psln=Y2o2ZGdkOXZuZzA=",
+    "fortune": "A trip to a foreign country will broaden your perspective on life",
+    "lat": 41.546295226016,
+    "lng": -83.599051438289
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
