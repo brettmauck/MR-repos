@@ -988,6 +988,21 @@
     "lng": -83.562332760165
   },
   {
+    "id": "30ef6b40-f9e8-4143-a6b5-2cbd9f7e03ba",
+    "date": "2026-08-13",
+    "name": "Mr. Panda Buffet",
+    "address": "5335 Airport Hwy, Toledo, OH 43615",
+    "yelp": 3.6,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 29.72,
+    "link": "https://www.instagram.com/reel/Db_tzrexsR9/?mdxt=MXUzOG44bnpvOTVxcw==",
+    "fortune": "Your resilience in the face of challenges will lead to unexpected opportunities.",
+    "lat": 41.616528639338,
+    "lng": -83.668118176444
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
