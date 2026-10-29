@@ -733,6 +733,21 @@
     "lng": -86.064157060819
   },
   {
+    "id": "1d8a8ae6-527c-4264-8c56-49e364c567f9",
+    "date": "2026-07-24",
+    "name": "Fu Yuan Hibachi Buffet",
+    "address": "2535 E Main St, Plainfield, IN 46168",
+    "yelp": 3.1,
+    "mullet": 2.2,
+    "gooning": true,
+    "pizza": true,
+    "cost": 43.73,
+    "link": "https://www.instagram.com/reel/DbMPRG6h0rg/?dlrf=b3NjN3AyempubXFi",
+    "fortune": "Your talents will have a chance to shine",
+    "lat": 39.715180758406,
+    "lng": -86.363486280548
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
