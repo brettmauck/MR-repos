@@ -1078,6 +1078,21 @@
     "lng": -82.976332229106
   },
   {
+    "id": "2b362b60-9492-4bdd-9845-9b741d61d90b",
+    "date": "2026-08-19",
+    "name": "Moon Buffet",
+    "address": "101D Roosevelt Blvd, Eleanor, WV 25070",
+    "yelp": 3.9,
+    "mullet": 2.3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 23.21,
+    "link": "https://www.instagram.com/reel/DcPFe03xouX/?exln=eXdjZ293MmFqenM4",
+    "fortune": "July’s beauty will surround you, appreciate it.",
+    "lat": 38.5375473,
+    "lng": -81.9331086
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
