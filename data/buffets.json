@@ -793,6 +793,21 @@
     "lng": -83.037015807573
   },
   {
+    "id": "4fdf91a5-686d-4575-a605-fc28f5b2987e",
+    "date": "2026-07-31",
+    "name": "Hong Kong Buffet",
+    "address": "1561 Marion-Mt Gilead Rd, Marion, OH 43302",
+    "yelp": 3,
+    "mullet": 2.5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 31.64,
+    "link": "https://www.instagram.com/reel/DbeKmCNh-9B/?cplk=MWphY3VjaXIwNW83eg==",
+    "fortune": "Let go of the past and embrace July’s opportunities (opened on July 31st lol)",
+    "lat": 40.581047268309,
+    "lng": -83.086794028709
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
