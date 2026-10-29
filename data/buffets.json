@@ -628,6 +628,21 @@
     "lng": -84.449380857926
   },
   {
+    "id": "b3463a61-2b2b-4b9e-a951-7f340503faa8",
+    "date": "2026-07-17",
+    "name": "Supreme Hibachi Buffet",
+    "address": "180 E New Circle Rd, Lexington, KY 40505",
+    "yelp": 3,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 35.17,
+    "link": "https://www.instagram.com/reel/Da6WAZiuzmw/?rpxt=MXJlY205Zm1zdHdlZQ==",
+    "fortune": "Tonight, you’ll receive an unexpected gift.",
+    "lat": 38.063078659427,
+    "lng": -84.468051637795
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
