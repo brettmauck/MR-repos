@@ -688,6 +688,21 @@
     "lng": -86.080002496564
   },
   {
+    "id": "9bf5214e-db6c-4671-b04b-1565d3587167",
+    "date": "2026-07-21",
+    "name": "China Buffet",
+    "address": "5202 E Thompson Rd #110, Indianapolis, IN 46237",
+    "yelp": 3,
+    "mullet": 2.9,
+    "gooning": true,
+    "pizza": false,
+    "cost": 30,
+    "link": "https://www.instagram.com/reel/DbEb0eBhKSO/?exln=cGt1dzZpdjd4anp1",
+    "fortune": "Next week will bring a surge of motivation",
+    "lat": 39.694684066655,
+    "lng": -86.080018944929
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
