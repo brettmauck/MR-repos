@@ -673,6 +673,21 @@
     "lng": -85.213942976938
   },
   {
+    "id": "0405b29b-c1bd-414f-9e04-d142c80fd803",
+    "date": "2026-07-20",
+    "name": "Queen Buffet",
+    "address": "5209 E Thompson Rd, Indianapolis, IN 46237",
+    "yelp": 3.8,
+    "mullet": 3.2,
+    "gooning": true,
+    "pizza": true,
+    "cost": 41.4,
+    "link": "https://www.instagram.com/reel/DbByjZWhxQd/?mdxt=dDB0Y2U0c3dteXpz",
+    "fortune": "To be creative is to unlock the door to infinite possibilities.",
+    "lat": 39.694569701644,
+    "lng": -86.080002496564
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
