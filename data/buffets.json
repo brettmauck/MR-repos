@@ -718,6 +718,21 @@
     "lng": -85.995239048982
   },
   {
+    "id": "c2f86f23-1397-4a93-b2b9-0048759ff389",
+    "date": "2026-07-23",
+    "name": "Super China Buffet",
+    "address": "1029 N Arlington Ave, Indianapolis, IN 46219",
+    "yelp": 3.1,
+    "mullet": 2,
+    "gooning": false,
+    "pizza": false,
+    "cost": 34.01,
+    "link": "https://www.instagram.com/reel/DbJoYZEBZY8/?mdxt=MTJuaHYza2k3bGM5MQ==",
+    "fortune": "",
+    "lat": 39.781944929722,
+    "lng": -86.064157060819
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
