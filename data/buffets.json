@@ -883,6 +883,21 @@
     "lng": -81.438037192266
   },
   {
+    "id": "c58c924b-9398-41aa-95e9-7c28ceb3a387",
+    "date": "2026-08-07",
+    "name": "Royal Buffet & Grill",
+    "address": "1930 Buchholzer Blvd, Akron, OH 44310",
+    "yelp": 2.6,
+    "mullet": 2.3,
+    "gooning": false,
+    "pizza": true,
+    "cost": 46,
+    "link": "https://www.instagram.com/reel/DbvdtbrOyrU/?vrfl=MXhvcmQwNnltZmR4ZA==",
+    "fortune": "",
+    "lat": 41.114933865061,
+    "lng": -81.471426164142
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
