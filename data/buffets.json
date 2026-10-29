@@ -1108,6 +1108,21 @@
     "lng": -81.827270691762
   },
   {
+    "id": "b9892bea-1d41-4743-b518-f55250c05440",
+    "date": "2026-08-22",
+    "name": "China Buffet",
+    "address": "5707 MacCorkle Ave SE, Charleston, WV 25304",
+    "yelp": 3.9,
+    "mullet": 3.9,
+    "gooning": false,
+    "pizza": false,
+    "cost": 30.58,
+    "link": "https://www.instagram.com/reel/DcXXfDZun5r/?xtok=MXdnYjg2aGNzbXpodA==",
+    "fortune": "Your future will look adventurous",
+    "lat": 38.313615660131,
+    "lng": -81.5682558415
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
