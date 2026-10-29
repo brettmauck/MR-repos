@@ -658,6 +658,21 @@
     "lng": -84.53679255928
   },
   {
+    "id": "d6404f95-c010-4446-ac02-071d3a005a7b",
+    "date": "2026-07-19",
+    "name": "New China Buffet",
+    "address": "128 Cross County Plaza, Batesville, IN 47006",
+    "yelp": 3.6,
+    "mullet": 3.8,
+    "gooning": false,
+    "pizza": false,
+    "cost": 27.8,
+    "link": "https://www.instagram.com/reel/Da_TcqhvRdA/?cplk=MXJ3aTRzNDI2dm5meA==",
+    "fortune": "",
+    "lat": 39.309532479569,
+    "lng": -85.213942976938
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
