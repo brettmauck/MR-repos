@@ -853,6 +853,21 @@
     "lng": -81.762959122492
   },
   {
+    "id": "56541966-398d-47bd-a7db-3e2629d84d30",
+    "date": "2026-08-04",
+    "name": "Kumo Japanese Seafood Buffet",
+    "address": "1975 Snow Rd, Cleveland, OH 44134",
+    "yelp": 3.2,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": false,
+    "cost": 35.62,
+    "link": "https://www.instagram.com/reel/DbomypyucF4/?obrf=ZTVvNmw5bHNrM2Y5",
+    "fortune": "",
+    "lat": 41.405145358653,
+    "lng": -81.693659507055
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
