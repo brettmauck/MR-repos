@@ -823,6 +823,21 @@
     "lng": -82.594084337703
   },
   {
+    "id": "7580505a-6758-4ba7-ac87-9b7545c7aafd",
+    "date": "2026-08-02",
+    "name": "Dragon Buffet",
+    "address": "1201 N Court St, Medina, OH 44256",
+    "yelp": 3.4,
+    "mullet": 2.8,
+    "gooning": true,
+    "pizza": false,
+    "cost": 33.63,
+    "link": "https://www.instagram.com/reel/Dbi4KY8OSs2/?exln=MTgyOG50NG43dnVrZQ==",
+    "fortune": "",
+    "lat": 41.157033492988,
+    "lng": -81.862537658827
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
