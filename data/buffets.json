@@ -613,6 +613,21 @@
     "lng": -84.56610647549
   },
   {
+    "id": "81cd10e1-4d10-41f8-b2cc-37e736331e63",
+    "date": "2026-07-16",
+    "name": "Golden Buffet",
+    "address": "2907 Richmond Rd, Lexington, KY 40509",
+    "yelp": 2.9,
+    "mullet": null,
+    "gooning": true,
+    "pizza": true,
+    "cost": 37.07,
+    "link": "https://www.instagram.com/reel/Da3pWmIBsS-/?dlrf=cXNjNWg1MmZtYmgy",
+    "fortune": "Your road to glory will be rocky, but fulfilling.",
+    "lat": 38.006105614254,
+    "lng": -84.449380857926
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
