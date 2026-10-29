@@ -808,6 +808,21 @@
     "lng": -83.086794028709
   },
   {
+    "id": "dff42afe-7451-420f-8b73-c869d913d38c",
+    "date": "2026-08-01",
+    "name": "China Buffet",
+    "address": "2216 Richland Mall, Ontario, OH 44906",
+    "yelp": 3.4,
+    "mullet": 2.8,
+    "gooning": true,
+    "pizza": false,
+    "cost": 34.22,
+    "link": "https://www.instagram.com/reel/DbgvsaBhrWP/?dlrf=enpza2FuejI5NTc5",
+    "fortune": "Forgive those who have wronged you for your own peace of mind",
+    "lat": 40.772750944252,
+    "lng": -82.594084337703
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
