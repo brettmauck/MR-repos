@@ -1138,6 +1138,21 @@
     "lng": -81.172765153203
   },
   {
+    "id": "78c048bf-916c-4595-bde4-f8e34c39c8eb",
+    "date": "2026-08-24",
+    "name": "China Wok Buffet",
+    "address": "330 Commonwealth Dr, Wytheville, VA 24382",
+    "yelp": 3.3,
+    "mullet": 2.5,
+    "gooning": true,
+    "pizza": true,
+    "cost": 25.95,
+    "link": "https://www.instagram.com/reel/Dccm2M_Okl8/?rpxt=MTVkNDdwbjA2MWxxMg==",
+    "fortune": "Your kindness will be a source of light in the world",
+    "lat": 36.957229863518,
+    "lng": -81.09776050389
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
