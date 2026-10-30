@@ -1378,6 +1378,21 @@
     "lng": -86.476228518213
   },
   {
+    "id": "1360f350-adb2-410a-b2e1-25d4094e5d38",
+    "date": "2026-09-12",
+    "name": "Great Taste Buffet",
+    "address": "3616 W 3rd St, Bloomington, IN 47404",
+    "yelp": 3.2,
+    "mullet": 2.2,
+    "gooning": true,
+    "pizza": false,
+    "cost": 26,
+    "link": "https://www.instagram.com/reel/DdM8ab3xwvX/?psln=MWd6eThrdWNidTc3aQ==",
+    "fortune": "",
+    "lat": 39.1663932,
+    "lng": -86.5804029
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
