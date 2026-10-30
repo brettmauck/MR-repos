@@ -1168,6 +1168,21 @@
     "lng": -80.615406984053
   },
   {
+    "id": "a595eb7a-0065-4dbb-96ef-8c27b6d74c3a",
+    "date": "2026-08-26",
+    "name": "Bamboo Garden Restaurant II",
+    "address": "10106 S Main St C, Archdale, NC 27263",
+    "yelp": 2.8,
+    "mullet": 1.8,
+    "gooning": true,
+    "pizza": false,
+    "cost": 28.36,
+    "link": "https://www.instagram.com/reel/DchS3NDRB27/?mdxt=MXI5ZWtzbDBuZzNteg==",
+    "fortune": "This month you’ll make significant progress towards your goals.",
+    "lat": 35.900561839595,
+    "lng": -79.947635634055
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
