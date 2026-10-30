@@ -1468,6 +1468,21 @@
     "lng": -86.474409854941
   },
   {
+    "id": "985789e0-d555-4bb3-bd2d-cb975710a710",
+    "date": "2026-09-18",
+    "name": "“Everything Ok” Buffet",
+    "address": "1435 E Wabash St, Frankfort, IN 46041",
+    "yelp": 2.9,
+    "mullet": 0,
+    "gooning": true,
+    "pizza": false,
+    "cost": 33.5,
+    "link": "https://www.instagram.com/reel/DdcWAY_xZwD/?srtk=MWxhbWZ5djZpd2Zh",
+    "fortune": "",
+    "lat": 40.278913336387,
+    "lng": -86.496165014922
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
