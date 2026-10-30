@@ -1438,6 +1438,21 @@
     "lng": -86.375025042851
   },
   {
+    "id": "c1b1faa3-2309-4697-bcb4-99a4d9d608f7",
+    "date": "2026-09-16",
+    "name": "China Buffet",
+    "address": "120 N, IN-267, Avon, IN 46123",
+    "yelp": 2.5,
+    "mullet": 2.5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 30.19,
+    "link": "https://www.instagram.com/reel/DdXHP1ExY5m/?xtok=eGpzeTQ3OXo3NGow",
+    "fortune": "",
+    "lat": 39.763153,
+    "lng": -86.334154
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
