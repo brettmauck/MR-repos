@@ -1183,6 +1183,21 @@
     "lng": -79.947635634055
   },
   {
+    "id": "5f53f325-cdee-4664-8d81-61a65d6def92",
+    "date": "2026-08-27",
+    "name": "Happy China Restaurant",
+    "address": "123 Pointe S Dr, Randleman, NC 27317",
+    "yelp": 3.9,
+    "mullet": 4.3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 27.7,
+    "link": "https://www.instagram.com/reel/DckGW4fONJG/?obrf=MTR2NTZ4cHk2ZDN3dw==",
+    "fortune": "A determined heart frightens problems away",
+    "lat": 35.802074140261,
+    "lng": -79.811271959407
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
