@@ -1258,6 +1258,21 @@
     "lng": -82.985174023101
   },
   {
+    "id": "60b25199-37dd-42bd-93f7-5865f97efb0c",
+    "date": "2026-09-03",
+    "name": "Osaka Hibachi & Sushi Buffet",
+    "address": "4009 Chapman Hwy, Knoxville, TN 37920",
+    "yelp": 3.5,
+    "mullet": 2.1,
+    "gooning": true,
+    "pizza": false,
+    "cost": 27.31,
+    "link": "https://www.instagram.com/reel/Dc16uv7xVq4/?psln=bDZoMWZwa2Z3b3Vh",
+    "fortune": "You will make many changes before settling down happily",
+    "lat": 35.937764494922,
+    "lng": -83.908093344068
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
