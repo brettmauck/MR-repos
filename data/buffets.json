@@ -1408,6 +1408,21 @@
     "lng": -86.593776095166
   },
   {
+    "id": "87994233-0671-45e9-9c9b-d6290fe87740",
+    "date": "2026-09-14",
+    "name": "China Buffet",
+    "address": "2100 Burton Ln, Martinsville, IN 46151",
+    "yelp": 3.5,
+    "mullet": 3.1,
+    "gooning": true,
+    "pizza": false,
+    "cost": 34.54,
+    "link": "https://www.instagram.com/reel/DdRzR9fRrhh/?vrfl=anZncTU2dG92eWFu",
+    "fortune": "",
+    "lat": 39.406847336452,
+    "lng": -86.437239901858
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
