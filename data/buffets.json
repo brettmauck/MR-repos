@@ -1273,6 +1273,21 @@
     "lng": -83.908093344068
   },
   {
+    "id": "87324540-76c7-4c59-9308-aa97556f3385",
+    "date": "2026-09-04",
+    "name": "China Wok Buffet",
+    "address": "5453 Washington Pike, Knoxville, TN 37918",
+    "yelp": 2.9,
+    "mullet": 2.3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 26.11,
+    "link": "https://www.instagram.com/reel/Dc4p-2aRWz1/?vrfl=MXhxOXFpMzY0NXV6cQ==",
+    "fortune": "Teach your children the value of accountability and taking responsibility",
+    "lat": 36.036680216214,
+    "lng": -83.884853032116
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
