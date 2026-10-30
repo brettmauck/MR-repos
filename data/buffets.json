@@ -1153,6 +1153,21 @@
     "lng": -81.09776050389
   },
   {
+    "id": "2d028451-2d80-4ad3-a021-da7f937f58b1",
+    "date": "2026-08-25",
+    "name": "Asian House Hibachi Buffet",
+    "address": "2021 Rockford St, Mt Airy, NC 27030",
+    "yelp": 2.5,
+    "mullet": 1.8,
+    "gooning": true,
+    "pizza": false,
+    "cost": 24.59,
+    "link": "https://www.instagram.com/reel/Dce006_uXL2/?exln=MWhuNnpmN25ndnl2OA==",
+    "fortune": "This month, you’ll make significant progress towards your goals",
+    "lat": 36.480649447202,
+    "lng": -80.615406984053
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
