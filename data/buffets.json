@@ -1243,6 +1243,21 @@
     "lng": -82.628918969057
   },
   {
+    "id": "f4c2b66c-efa5-45de-bf14-be8bc07342c0",
+    "date": "2026-09-02",
+    "name": "New Happy Garden Restaurant",
+    "address": "133 Waynesville Plaza #2993, Waynesville, NC 28786",
+    "yelp": 2.3,
+    "mullet": 1.3,
+    "gooning": false,
+    "pizza": true,
+    "cost": 36.37,
+    "link": "https://www.instagram.com/reel/DczR50cxiMn/?vrfl=dWxzNW4zcXh1ZzI2",
+    "fortune": "Tonight, a moment of inspiration will strike you.",
+    "lat": 35.500515648089,
+    "lng": -82.985174023101
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
