@@ -1483,6 +1483,21 @@
     "lng": -86.496165014922
   },
   {
+    "id": "6403936f-e8e2-4eb4-b746-bea68cfc03f7",
+    "date": "2026-09-19",
+    "name": "Great China Buffet",
+    "address": "2449 E Wabash St, Frankfort, IN 46041",
+    "yelp": 3.5,
+    "mullet": 3.5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 31.9,
+    "link": "https://www.instagram.com/reel/DdfXM7XxoA1/?srtk=MTBiNzV1dTZ1czQ0ZA==",
+    "fortune": "Life to you is a dashing and bold adventure",
+    "lat": 40.278784214692,
+    "lng": -86.4802362517
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
