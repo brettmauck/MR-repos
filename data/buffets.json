@@ -1453,6 +1453,21 @@
     "lng": -86.334154
   },
   {
+    "id": "27ba71cb-8aaa-4a35-8446-9d38e943eedb",
+    "date": "2026-09-17",
+    "name": "Buffet King",
+    "address": "2452 N Lebanon St, Lebanon, IN 46052",
+    "yelp": 3,
+    "mullet": 3.5,
+    "gooning": true,
+    "pizza": true,
+    "cost": 28.32,
+    "link": "https://www.instagram.com/reel/DdZ_UayxRY6/?vrfl=N200emhnZnFidHoz",
+    "fortune": "Don’t engage in road rage",
+    "lat": 40.073081100172,
+    "lng": -86.474409854941
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
