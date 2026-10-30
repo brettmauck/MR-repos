@@ -1303,6 +1303,21 @@
     "lng": -84.018586853321
   },
   {
+    "id": "c2c6319d-b02c-4bb6-9c88-b2a2817aa38b",
+    "date": "2026-09-06",
+    "name": "Hibachi Grill & Supreme Buffet",
+    "address": "9645 Kingston Pike, Knoxville, TN 37922",
+    "yelp": 3,
+    "mullet": 4.3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 38.22,
+    "link": "https://www.instagram.com/reel/Dc9en96xYPO/?rpxt=MXZ6d3VpanF3c3R3aA==",
+    "fortune": "",
+    "lat": 35.907901757255,
+    "lng": -84.105750117869
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
