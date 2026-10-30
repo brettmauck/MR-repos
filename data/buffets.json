@@ -1228,6 +1228,21 @@
     "lng": -78.675542915391
   },
   {
+    "id": "a3a702e7-db43-4568-8a0d-70681fbc3b1f",
+    "date": "2026-09-01",
+    "name": "Yao Buffet",
+    "address": "153 Smokey Park Hwy, Asheville, NC 28806",
+    "yelp": 2.9,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": false,
+    "cost": 31.99,
+    "link": "https://www.instagram.com/reel/DcwpCaux_X7/?rpxt=MW9kdGN2cWJ4MWZkaQ==",
+    "fortune": "The evening promises romantic interests",
+    "lat": 35.563730026586,
+    "lng": -82.628918969057
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
