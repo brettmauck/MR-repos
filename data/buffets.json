@@ -1363,6 +1363,21 @@
     "lng": -85.638479519121
   },
   {
+    "id": "a0d7e8f2-c87f-43ae-96e8-5fa8ef27cbab",
+    "date": "2026-09-10",
+    "name": "Mr. Hibachi Buffet",
+    "address": "4400 E 3rd St, Bloomington, IN 47401",
+    "yelp": 3,
+    "mullet": 2,
+    "gooning": true,
+    "pizza": null,
+    "cost": 37.71,
+    "link": "https://www.instagram.com/reel/DdKGHJZxDre/?exln=MWwxbm1ta3Z5YXozZQ==",
+    "fortune": "A lifetime of meaningful connections is coming",
+    "lat": 39.164178129297,
+    "lng": -86.476228518213
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
