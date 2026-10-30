@@ -4,6 +4,7 @@ Tracks Mullet Reviews' Chinese-buffet tour across the US.
 
 - **Map tab**: every buffet as a numbered pin (visit order), joined by a dashed line showing the route. Latest stop is gold. Tap a pin for details.
 - **Buffet Log tab**: a sortable table with date, name, address, Yelp ★, Mullet ★, delta (Mullet − Yelp), gooning / not gooning, pizza on the buffet, and cost for 2.
+- **Analytics tab**: state rankings (pizza, gooning, a state report card), buffet superlatives (best value, biggest letdowns, hidden gems, hall of fame/shame), hot takes, road-trip stats and a fortune cookie corner. All recalculated live from the buffet list.
 - Summary stats across the top (buffets, states, average ratings and delta, % gooning, % pizza, average cost).
 
 ## Where the data lives

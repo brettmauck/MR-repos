@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mullet Buffet Tracker</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
   <header>
@@ -14,6 +14,7 @@
     <nav>
       <button class="tab active" data-tab="map">Map</button>
       <button class="tab" data-tab="log">Buffet Log</button>
+      <button class="tab" data-tab="analytics">Analytics</button>
       <button id="editor-btn" title="Editor sign-in">🔑</button>
     </nav>
   </header>
@@ -55,9 +56,12 @@
       </div>
       <p class="hint" id="log-empty"></p>
     </section>
+    <section id="tab-analytics" class="panel">
+      <div id="analytics"></div>
+    </section>
   </main>
   <!-- Bump this number (and the ?v= on styles.css and app.js) on every update so phones load the new files. -->
-  <footer class="version">Version 9</footer>
+  <footer class="version">Version 10</footer>
 
   <dialog id="visit-dialog">
     <form id="visit-form" method="dialog">
@@ -116,6 +120,7 @@
   </dialog>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-  <script src="app.js?v=9"></script>
+  <script src="analytics.js?v=10"></script>
+  <script src="app.js?v=10"></script>
 </body>
 </html>

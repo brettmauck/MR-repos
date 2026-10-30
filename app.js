@@ -471,6 +471,7 @@ function render(refit) {
   renderStats();
   renderTable();
   renderMap();
+  renderAnalytics();
   if (refit) fitMap();
 }
 writeToken(token);
