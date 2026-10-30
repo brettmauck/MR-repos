@@ -1213,6 +1213,21 @@
     "lng": -78.869355493042
   },
   {
+    "id": "cdbf8fb9-d129-490d-a83f-662a4787c29b",
+    "date": "2026-08-30",
+    "name": "Sakura Hibachi Buffet",
+    "address": "523 Hwy 17 N, North Myrtle Beach, SC 29582",
+    "yelp": 3.3,
+    "mullet": 2.8,
+    "gooning": true,
+    "pizza": false,
+    "cost": 33.43,
+    "link": "https://www.instagram.com/reel/Dcr9zFZOQIS/?dlrf=MWo0cTdsZ2traHBleQ==",
+    "fortune": "You will experience joy in the beauty of the night sky",
+    "lat": 33.831992417081,
+    "lng": -78.675542915391
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
