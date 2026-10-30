@@ -1198,6 +1198,21 @@
     "lng": -79.811271959407
   },
   {
+    "id": "86bdcd08-e627-4d2f-a12c-05f7569a6b04",
+    "date": "2026-08-29",
+    "name": "Taste of Asia Buffet",
+    "address": "1293 38th Ave N, Myrtle Beach, SC 29577",
+    "yelp": 2.7,
+    "mullet": 2.7,
+    "gooning": true,
+    "pizza": false,
+    "cost": 44.58,
+    "link": "https://www.instagram.com/reel/DcpPPUMxrJO/?exln=MXEzd3pubHdnN3piMA==",
+    "fortune": "",
+    "lat": 33.727688409994,
+    "lng": -78.869355493042
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
