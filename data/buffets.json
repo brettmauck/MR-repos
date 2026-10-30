@@ -1288,6 +1288,21 @@
     "lng": -83.884853032116
   },
   {
+    "id": "83733188-7ec6-421e-9694-7af82953f0be",
+    "date": "2026-09-05",
+    "name": "Grand Buffet",
+    "address": "6612 Clinton Hwy, Knoxville, TN 37912",
+    "yelp": 3.5,
+    "mullet": 5,
+    "gooning": true,
+    "pizza": true,
+    "cost": 32.74,
+    "link": "https://www.instagram.com/reel/Dc7GIJjxVhc/?dlrf=dHh0djh1NWdlZ2tt",
+    "fortune": "",
+    "lat": 36.006916863011,
+    "lng": -84.018586853321
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
