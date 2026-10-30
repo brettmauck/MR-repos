@@ -1348,6 +1348,21 @@
     "lng": -85.6198059
   },
   {
+    "id": "f99b473d-c653-453d-ae78-32107310cd79",
+    "date": "2026-09-09",
+    "name": "N V China Buffet",
+    "address": "1599 N State St, North Vernon, IN 47265",
+    "yelp": 2.9,
+    "mullet": 2.3,
+    "gooning": false,
+    "pizza": false,
+    "cost": 25.66,
+    "link": "https://www.instagram.com/reel/DdFwiVquhLm/?rpxt=MWkzbzY3Z29hYXQ1dg==",
+    "fortune": "Your success will be a testament to your resilience",
+    "lat": 39.013430582819,
+    "lng": -85.638479519121
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
