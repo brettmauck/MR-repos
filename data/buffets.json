@@ -1393,6 +1393,21 @@
     "lng": -86.5804029
   },
   {
+    "id": "41bf76b1-be3c-4f39-ab22-4ec72f936106",
+    "date": "2026-09-13",
+    "name": "China Star Buffet",
+    "address": "4641 W Richland Plaza Dr, Bloomington, IN 47404",
+    "yelp": 3.4,
+    "mullet": 2.5,
+    "gooning": false,
+    "pizza": false,
+    "cost": 30,
+    "link": "https://www.instagram.com/reel/DdPhWwFRBWR/?exln=d2tvdndhNHUzdDU4",
+    "fortune": "You won’t know until you try",
+    "lat": 39.214439036217,
+    "lng": -86.593776095166
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
