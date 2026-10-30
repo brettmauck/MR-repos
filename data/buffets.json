@@ -1423,6 +1423,21 @@
     "lng": -86.437239901858
   },
   {
+    "id": "ab0aa22c-c9dc-452c-bb13-e0c9b811ffab",
+    "date": "2026-09-15",
+    "name": "Dong’s China Buffet",
+    "address": "370-530 S Indiana St, Mooresville, IN 46158",
+    "yelp": 3.9,
+    "mullet": 4.7,
+    "gooning": true,
+    "pizza": true,
+    "cost": 31.32,
+    "link": "https://www.instagram.com/reel/DdUp9TtRaEu/?xtok=Z3Jib2FlbXFoNjli",
+    "fortune": "Experience is what you get when you don’t get what you want",
+    "lat": 39.604463451127,
+    "lng": -86.375025042851
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
