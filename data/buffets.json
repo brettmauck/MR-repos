@@ -1723,6 +1723,21 @@
     "lng": -97.100572959766
   },
   {
+    "id": "35522a3a-8dd8-48fb-9ad9-5fb1e92787bf",
+    "date": "2026-10-05",
+    "name": "Asian Buffet",
+    "address": "944 E Copeland Rd, Arlington, TX 76011",
+    "yelp": 3.4,
+    "mullet": 4.3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 41.11,
+    "link": "https://www.instagram.com/reel/DeIatKDxanA/?srtk=MTZnNmsyMHRiM21ybw==",
+    "fortune": "Make today the day you follow your heart.",
+    "lat": 32.759058972271,
+    "lng": -97.095525858463
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
