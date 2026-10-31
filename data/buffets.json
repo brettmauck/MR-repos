@@ -1663,6 +1663,21 @@
     "lng": -97.384900634208
   },
   {
+    "id": "fba2f042-d240-4b33-9a23-00ff1d0b0e3c",
+    "date": "2026-10-01",
+    "name": "Buffet Palace",
+    "address": "6835 NE Loop 820, North Richland Hills, TX 76180",
+    "yelp": 2.8,
+    "mullet": 3.5,
+    "gooning": false,
+    "pizza": false,
+    "cost": 29.21,
+    "link": "https://www.instagram.com/reel/Dd9_d6ZxsTl/?psln=YnFoMzJ5MnFidnZ2",
+    "fortune": "Be patient, for opportunities are like tides; they ebb and flow.",
+    "lat": 32.840615321832,
+    "lng": -97.233851088519
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
