@@ -1903,6 +1903,21 @@
     "lng": -80.053449536435
   },
   {
+    "id": "70d871de-b65e-4048-9a8c-97c4d761e5db",
+    "date": "2026-10-18",
+    "name": "Hokkaido Seafood Buffet",
+    "address": "4612 Browns Hill Rd, Pittsburgh, PA 15217",
+    "yelp": 2.8,
+    "mullet": 2.6,
+    "gooning": true,
+    "pizza": true,
+    "cost": 36.36,
+    "link": "https://www.instagram.com/reel/DeptgoLxmRb/?exln=MzJ6enV4bnpqb2tv",
+    "fortune": "You’ll enjoy love that deepens with time.",
+    "lat": 40.415212018102,
+    "lng": -79.924589340317
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
