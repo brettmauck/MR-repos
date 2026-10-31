@@ -1534,7 +1534,7 @@
     "address": "1367 Cass St, Wabash, IN 46992",
     "yelp": 3,
     "mullet": 3.5,
-    "gooning": null,
+    "gooning": true,
     "pizza": false,
     "cost": 25.66,
     "link": "https://www.instagram.com/reel/Ddm2gQmRd3n/?exln=MWc2dmx0YjF4M2h1NA==",
