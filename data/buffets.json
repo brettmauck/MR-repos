@@ -1738,6 +1738,21 @@
     "lng": -97.095525858463
   },
   {
+    "id": "52994e93-566f-46bb-a298-f883a9e09d99",
+    "date": "2026-10-06",
+    "name": "King Buffet",
+    "address": "300 E Interstate 20, Arlington, TX 76018",
+    "yelp": 3.9,
+    "mullet": 4.3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 41.11,
+    "link": "https://www.instagram.com/reel/DeK0GHPxY-4/?rpxt=eG40emFrNDg5aGxz",
+    "fortune": "Show kindness to a stranger, as if they were a loved one..",
+    "lat": 32.6783717,
+    "lng": -97.1053008
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
