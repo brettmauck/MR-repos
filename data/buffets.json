@@ -1528,6 +1528,21 @@
     "lng": -86.165059127821
   },
   {
+    "id": "71a4596b-4368-4544-955f-608f756735c3",
+    "date": "2026-09-22",
+    "name": "New Asian Buffet",
+    "address": "1367 Cass St, Wabash, IN 46992",
+    "yelp": 3,
+    "mullet": 3.5,
+    "gooning": null,
+    "pizza": false,
+    "cost": 25.66,
+    "link": "https://www.instagram.com/reel/Ddm2gQmRd3n/?exln=MWc2dmx0YjF4M2h1NA==",
+    "fortune": "Your life will look like a series of blessings",
+    "lat": 40.813313048493,
+    "lng": -85.836165093311
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
