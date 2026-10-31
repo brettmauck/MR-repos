@@ -1828,6 +1828,21 @@
     "lng": -97.400844679011
   },
   {
+    "id": "e8fb5210-66d6-475e-8e7e-229c7f8ae5c3",
+    "date": "2026-10-12",
+    "name": "China City Buffet",
+    "address": "3650 S High St, Columbus, OH 43207",
+    "yelp": 2.6,
+    "mullet": 2.6,
+    "gooning": true,
+    "pizza": true,
+    "cost": 28.06,
+    "link": "https://www.instagram.com/reel/Deag9AKR5IX/?exln=MXA4NTE3aGdpZjA2OQ==",
+    "fortune": "A reunion with a loved one awaits you tonight.",
+    "lat": 39.886797192571,
+    "lng": -82.99877373732
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
