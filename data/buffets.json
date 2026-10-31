@@ -1798,6 +1798,21 @@
     "lng": -97.4408172
   },
   {
+    "id": "592b1f75-5ecd-42dc-a683-9c5d24378808",
+    "date": "2026-10-10",
+    "name": "Asian King Buffet",
+    "address": "6051 SW Loop 820 Ste 322, Fort Worth, TX 76132",
+    "yelp": 3.2,
+    "mullet": 3.2,
+    "gooning": true,
+    "pizza": true,
+    "cost": 43.26,
+    "link": "https://www.instagram.com/reel/DeVMWE1xsGV/?obrf=MTJjZnE5aWRhMGFwbQ==",
+    "fortune": "",
+    "lat": 32.6816197,
+    "lng": -97.4040332
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
