@@ -1768,6 +1768,21 @@
     "lng": -97.129837414494
   },
   {
+    "id": "6161a33c-d3b3-4d2c-b509-01df868bc923",
+    "date": "2026-10-08",
+    "name": "Panda Buffet",
+    "address": "3980 Boat Club Rd #107, Lake Worth, TX 76135",
+    "yelp": 2.9,
+    "mullet": 3.1,
+    "gooning": false,
+    "pizza": true,
+    "cost": 32.88,
+    "link": "https://www.instagram.com/reel/DeQI3yDRODZ/?obrf=YTJoMzhoa281aHM4",
+    "fortune": "Don’t be afraid to share your experiences with the world.",
+    "lat": 32.812793976986,
+    "lng": -97.42012465949
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
