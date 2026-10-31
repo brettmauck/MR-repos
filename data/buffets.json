@@ -1498,6 +1498,21 @@
     "lng": -86.4802362517
   },
   {
+    "id": "cb20cd78-8424-4d4e-bc56-51d5c387a9f0",
+    "date": "2026-09-20",
+    "name": "Ichiban Buffet",
+    "address": "1803 E Markland Ave, Kokomo, IN 46901",
+    "yelp": 3.8,
+    "mullet": 4.8,
+    "gooning": true,
+    "pizza": true,
+    "cost": 31,
+    "link": "https://www.instagram.com/reel/DdhlMQzR00n/?vrfl=MXQzNzN1MDU1cXRyYQ==",
+    "fortune": "",
+    "lat": 40.476627222488,
+    "lng": -86.106552654029
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
