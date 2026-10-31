@@ -1888,6 +1888,21 @@
     "lng": -80.754281713971
   },
   {
+    "id": "8876d081-45a4-41e2-bccd-5c0f1498e1a5",
+    "date": "2026-10-17",
+    "name": "China Buffet King",
+    "address": "2249 Noblestown Rd, Pittsburgh, PA 15205",
+    "yelp": 2.7,
+    "mullet": 4.8,
+    "gooning": true,
+    "pizza": false,
+    "cost": 31,
+    "link": "https://www.instagram.com/reel/DenW1IZxRXj/?psln=M2tucjB0cTd5M2ll",
+    "fortune": "Speak the love language of kindness and you’ll touch hearts.",
+    "lat": 40.428491770884,
+    "lng": -80.053449536435
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
