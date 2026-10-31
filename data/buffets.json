@@ -2035,5 +2035,20 @@
     "link": "https://www.instagram.com/reel/DfBP3riRrTs/?vrfl=NWplbm83YjBqam1n",
     "lat": 41.9071045,
     "lng": -87.9120346
+  },
+  {
+    "id": "6df8504c-6267-4a42-b548-1906519415ea",
+    "date": "2026-10-28",
+    "name": "Hibachi Grill Asian Buffet",
+    "address": "101 Busse Rd, Elk Grove Village, IL 60007",
+    "yelp": 2.9,
+    "mullet": 3.3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 33.5,
+    "link": "https://www.instagram.com/reel/DfD2b71xVPN/?srtk=NmM3ZmN0YmR4YmYy",
+    "fortune": "",
+    "lat": 42.024161561779,
+    "lng": -87.959839482771
   }
 ]
