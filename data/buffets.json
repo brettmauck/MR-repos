@@ -1858,6 +1858,21 @@
     "lng": -82.831011585384
   },
   {
+    "id": "39b37a05-59b9-4741-823d-55bbe4162e78",
+    "date": "2026-10-15",
+    "name": "Oriental Super Buffet",
+    "address": "445 Underwood St, Zanesville, OH 43701",
+    "yelp": 2.9,
+    "mullet": 3.1,
+    "gooning": true,
+    "pizza": true,
+    "cost": 39.33,
+    "link": "https://www.instagram.com/reel/DeiFAMXx05o/?dlrf=cHJqMnBmZXhjeWxz",
+    "fortune": "Your life will be a symphony of love and fulfillment.",
+    "lat": 39.945408574673,
+    "lng": -82.001239733663
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
