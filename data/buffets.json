@@ -1918,6 +1918,21 @@
     "lng": -79.924589340317
   },
   {
+    "id": "9df5a68c-4fe5-4e66-bb8b-0233a08ad69a",
+    "date": "2026-10-19",
+    "name": "Fortune Star",
+    "address": "4070 William Penn Hwy, Monroeville, PA 15146",
+    "yelp": 3.4,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 27.71,
+    "link": "https://www.instagram.com/reel/DesTivnRGDg/?psln=MXFvdnRhcHh1MHl0Yw==",
+    "fortune": "Trust in the goodness of humanity.",
+    "lat": 40.438800218541,
+    "lng": -79.765958796409
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
