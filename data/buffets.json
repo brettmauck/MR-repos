@@ -1753,6 +1753,21 @@
     "lng": -97.1053008
   },
   {
+    "id": "f805564d-57e1-47aa-a303-8d7e709245c3",
+    "date": "2026-10-07",
+    "name": "China Harbor",
+    "address": "3512 S Cooper St, Arlington, TX 76015",
+    "yelp": 2.8,
+    "mullet": 3.3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 42.19,
+    "link": "https://www.instagram.com/reel/DeNZ85sxueU/?exln=MWJneDVnamd6eGJrYw==",
+    "fortune": "",
+    "lat": 32.689230985081,
+    "lng": -97.129837414494
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
