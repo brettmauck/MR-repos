@@ -1588,6 +1588,21 @@
     "lng": -85.133736936443
   },
   {
+    "id": "76321e15-b667-4959-82e1-d892904cee85",
+    "date": "2026-09-26",
+    "name": "Coco China Buffet",
+    "address": "2020 N Main St C, Bluffton, IN 46714",
+    "yelp": 3.7,
+    "mullet": 5,
+    "gooning": true,
+    "pizza": false,
+    "cost": 29.85,
+    "link": "https://www.instagram.com/reel/DdxQ5heRhWU/?exln=ZHpsMDRydjB2ajd2",
+    "fortune": "You are talented in many ways.",
+    "lat": 40.771771861772,
+    "lng": -85.165900637732
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
