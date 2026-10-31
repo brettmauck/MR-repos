@@ -1678,6 +1678,21 @@
     "lng": -97.233851088519
   },
   {
+    "id": "d2a5b916-a758-480b-8c8a-b4de8515eaeb",
+    "date": "2026-10-02",
+    "name": "Asian Buffet",
+    "address": "8028 Denton Hwy #334, Watauga, TX 76148",
+    "yelp": 3.7,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 36.78,
+    "link": "https://www.instagram.com/reel/DeAjQuDxbzJ/?mdxt=MXVveTQyd2Rxbmtpaw==",
+    "fortune": "Be open to opportunities that come your way, no matter how small they may seem.",
+    "lat": 32.890315216788,
+    "lng": -97.259323806768
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
