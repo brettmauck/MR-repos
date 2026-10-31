@@ -1933,6 +1933,21 @@
     "lng": -79.765958796409
   },
   {
+    "id": "66bd19fa-31bd-4015-a97d-fb0b4e0a6d4f",
+    "date": "2026-10-20",
+    "name": "TJ Buffet Sushi and Grill",
+    "address": "590 Pittsburgh Mills Cir, Tarentum, PA 15084",
+    "yelp": 3.1,
+    "mullet": 2.7,
+    "gooning": true,
+    "pizza": false,
+    "cost": 34.22,
+    "link": "https://www.instagram.com/reel/Deu86LNR2Gc/?exln=YjQ3Y2w5eDRxcW51",
+    "fortune": "July’s wisdom will guide your path.",
+    "lat": 40.573976153643,
+    "lng": -79.791879108823
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
