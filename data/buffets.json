@@ -1783,6 +1783,21 @@
     "lng": -97.42012465949
   },
   {
+    "id": "98324d64-5a6d-4b0c-8f4f-dc58ff5eae5a",
+    "date": "2026-10-09",
+    "name": "Asian Star Buffet",
+    "address": "1001 Alta Mere Dr, Fort Worth, TX 76116",
+    "yelp": 3.3,
+    "mullet": 3.3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 35.92,
+    "link": "https://www.instagram.com/reel/DeSgXDNRYb-/?xtok=azBoZzZyZDlrd3E3",
+    "fortune": "Believe in your dreams; they are your strength.",
+    "lat": 32.7366458,
+    "lng": -97.4408172
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
