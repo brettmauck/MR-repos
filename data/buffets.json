@@ -1813,6 +1813,21 @@
     "lng": -97.4040332
   },
   {
+    "id": "7cd5c939-3923-44cb-9829-7260d6c8e5c6",
+    "date": "2026-10-11",
+    "name": "East Gourmet Buffet",
+    "address": "6080 S Hulen St #550, Fort Worth, TX 76132",
+    "yelp": 3.2,
+    "mullet": 2.3,
+    "gooning": false,
+    "pizza": false,
+    "cost": 34.62,
+    "link": "https://www.instagram.com/reel/DeX_DtIuR3n/?mdxt=Zmt3eDZtOWJjMTVz",
+    "fortune": "Your friends will be your companions on a special journey.",
+    "lat": 32.660075036773,
+    "lng": -97.400844679011
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
