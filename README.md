@@ -13,7 +13,7 @@ The buffet list is `data/buffets.json` in this repo, so every device and every v
 - **Visitors** see the app read-only.
 - **The editor** taps 🔑 and pastes a GitHub token once per device. Then Add / Edit / Delete save straight to `data/buffets.json` as a commit. Other devices see the change about a minute later, once GitHub Pages refreshes.
 
-Creating the token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Under Repository access pick *Only select repositories → MR-repos*. Under Permissions → Repository permissions set **Contents: Read and write**.
+Creating the token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Under Repository access pick *Only select repositories → mullet-buffet-tracker*. Under Permissions → Repository permissions set **Contents: Read and write**.
 
 Addresses are turned into map pins automatically. The app tries the US Census Bureau geocoder, then OpenStreetMap, then Photon (all free, no key), and if none finds the exact street it pins the town/ZIP and says so. You can also type coordinates like `39.19, -84.24` as the address. If an address can't be found, enter latitude/longitude by hand under "Map location".
 

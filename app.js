@@ -1,7 +1,12 @@
 // Mullet Buffet Tracker
 // The buffet list lives in data/buffets.json in the GitHub repo, so every device sees the same data.
 // Visitors read it from the website. The editor signs in with a GitHub token, and saves commit straight to the repo.
-const REPO = 'brettmauck/MR-repos';
+// Work out the repo from the site address (owner.github.io/repo-name/), so renaming the repo just works.
+const REPO = (() => {
+  const owner = location.hostname.match(/^([\w-]+)\.github\.io$/i)?.[1];
+  const repo = location.pathname.split('/').filter(Boolean)[0];
+  return owner && repo ? `${owner}/${repo}` : 'brettmauck/mullet-buffet-tracker';
+})();
 const BRANCH = 'master';
 const DATA_PATH = 'data/buffets.json';
 const TOKEN_KEY = 'mullet-buffet-github-token';
@@ -462,7 +467,7 @@ document.getElementById('editor-form').addEventListener('submit', async e => {
     toast("Signed in. You can add and edit buffets on this device.");
   } catch {
     token = prev;
-    editorStatus.textContent = "That token didn't work. It needs Contents: Read and write access to the MR-repos repo.";
+    editorStatus.textContent = `That token didn't work. It needs Contents: Read and write access to the ${REPO.split('/')[1]} repo.`;
   }
 });
 
