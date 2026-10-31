@@ -1573,6 +1573,21 @@
     "lng": -85.190301409801
   },
   {
+    "id": "10ad106f-5877-4cfb-8caa-1c682d969702",
+    "date": "2026-09-25",
+    "name": "China Buffet",
+    "address": "322 E Pettit Ave, Fort Wayne, IN 46806",
+    "yelp": 2.5,
+    "mullet": 2.5,
+    "gooning": false,
+    "pizza": false,
+    "cost": 25.4,
+    "link": "https://www.instagram.com/reel/DduihetxbuK/?rpxt=a3p5OHI1MHJraHRo",
+    "fortune": "",
+    "lat": 41.038814287441,
+    "lng": -85.133736936443
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
