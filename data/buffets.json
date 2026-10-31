@@ -1648,6 +1648,21 @@
     "lng": -97.347716080467
   },
   {
+    "id": "cbeb0d34-8a6a-4b53-ad6c-88d2b405f390",
+    "date": "2026-09-30",
+    "name": "China Flag Buffet",
+    "address": "1453 N Saginaw Blvd #135, Saginaw, TX 76179",
+    "yelp": 3.4,
+    "mullet": 2.3,
+    "gooning": false,
+    "pizza": true,
+    "cost": 36.78,
+    "link": "https://www.instagram.com/reel/Dd7b2yXR0et/?srtk=Zndkd3JuNjJ3MTZp",
+    "fortune": "Great thoughts come from the heart.",
+    "lat": 32.884260702101,
+    "lng": -97.384900634208
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
