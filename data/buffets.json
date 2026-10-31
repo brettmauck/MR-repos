@@ -1513,6 +1513,21 @@
     "lng": -86.106552654029
   },
   {
+    "id": "31118e77-72f5-43d4-a1e9-9f76f6ba4383",
+    "date": "2026-09-21",
+    "name": "Great Wall Buffet",
+    "address": "639 N Dixon Rd, Kokomo, IN 46901",
+    "yelp": 3,
+    "mullet": 2.9,
+    "gooning": true,
+    "pizza": true,
+    "cost": 25.66,
+    "link": "https://www.instagram.com/reel/DdkSDiVxbuk/?obrf=MWZ0bWsybWdxNXNjZA==",
+    "fortune": "",
+    "lat": 40.491331713856,
+    "lng": -86.165059127821
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
