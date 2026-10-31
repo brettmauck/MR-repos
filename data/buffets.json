@@ -1693,6 +1693,21 @@
     "lng": -97.259323806768
   },
   {
+    "id": "16ec4d2f-5950-4545-8174-e4d1b097fedb",
+    "date": "2026-10-03",
+    "name": "Asian King Buffet",
+    "address": "953 Melbourne Rd, Hurst, TX 76053",
+    "yelp": 3.8,
+    "mullet": 3.9,
+    "gooning": true,
+    "pizza": true,
+    "cost": 36.78,
+    "link": "https://www.instagram.com/reel/DeDL5LkxLjM/?exln=MWxraGhxNXJzdTExYQ==",
+    "fortune": "Approach Mondays with resilience and you’ll overcome any obstacle.",
+    "lat": 32.825984557655,
+    "lng": -97.198506406073
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
