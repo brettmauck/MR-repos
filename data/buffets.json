@@ -1963,6 +1963,21 @@
     "lng": -79.191021981093
   },
   {
+    "id": "0e69c9d7-0e1c-48d7-8fca-966d1765ee19",
+    "date": "2026-10-22",
+    "name": "Panda Buffet",
+    "address": "881 Hills Plaza, Ebensburg, PA 15931",
+    "yelp": 3.3,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 24.38,
+    "link": "https://www.instagram.com/reel/De2t7VDxwQK/?obrf=MXMyd3RhYzEyODlkMw==",
+    "fortune": "A new and exciting opportunity will present itself this Friday.",
+    "lat": 40.469125881753,
+    "lng": -78.759003154671
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
