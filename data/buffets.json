@@ -2050,5 +2050,20 @@
     "fortune": "",
     "lat": 42.024161561779,
     "lng": -87.959839482771
+  },
+  {
+    "id": "8e149a1a-3e8d-41d6-ae32-37d97d3f58e0",
+    "date": "2026-10-29",
+    "name": "Royal Buffet",
+    "address": "31 Golf Center, Hoffman Estates, IL 60169",
+    "yelp": 3.1,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": true,
+    "cost": 56.69,
+    "link": "https://www.instagram.com/reel/DfGnMBOOQuE/?srtk=MWx4dzViMmxwamVxbw==",
+    "fortune": "",
+    "lat": 42.048489314547,
+    "lng": -88.081718728898
   }
 ]
