@@ -1618,6 +1618,21 @@
     "lng": -84.587490747471
   },
   {
+    "id": "ed36122c-7b74-4dd3-9fae-e82ebd67a012",
+    "date": "2026-09-28",
+    "name": "Grand Buffet",
+    "address": "1450 Circleville Plaza Dr, Circleville, OH 43113",
+    "yelp": 2.4,
+    "mullet": 2.6,
+    "gooning": true,
+    "pizza": true,
+    "cost": 38.51,
+    "link": "https://www.instagram.com/reel/Dd2R6pVxMwS/?psln=bzV3anpscWVrdGo2",
+    "fortune": "",
+    "lat": 39.583870085622,
+    "lng": -82.948877178655
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
