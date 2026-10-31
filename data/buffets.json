@@ -2065,5 +2065,20 @@
     "fortune": "",
     "lat": 42.048489314547,
     "lng": -88.081718728898
+  },
+  {
+    "id": "ddde8e8a-2be5-49ba-b3d6-c58b488b705c",
+    "date": "2026-10-30",
+    "name": "Feast Asian Buffet",
+    "address": "7620 Barrington Rd, Hanover Park, IL 60133",
+    "yelp": 3.3,
+    "mullet": 3.1,
+    "gooning": true,
+    "pizza": true,
+    "cost": 44.14,
+    "link": "https://www.instagram.com/reel/DfIfzDexK-b/?psln=eHZ3eGF2dWZ0ZTEw",
+    "fortune": "Love and romance will flourish in December.",
+    "lat": 41.9914932,
+    "lng": -88.1447302
   }
 ]
