@@ -1843,6 +1843,21 @@
     "lng": -82.99877373732
   },
   {
+    "id": "93d16503-2260-447b-8726-5fb2f3c7d13e",
+    "date": "2026-10-14",
+    "name": "Asian Star Buffet",
+    "address": "2770 Brice Rd, Reynoldsburg, OH 43068",
+    "yelp": 3.3,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": true,
+    "cost": 38.85,
+    "link": "https://www.instagram.com/reel/DefNxtDx6gf/?srtk=MW0ybTdtYWpvYXpkNg==",
+    "fortune": "",
+    "lat": 39.925138952451,
+    "lng": -82.831011585384
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
