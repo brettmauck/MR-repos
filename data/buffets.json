@@ -1603,6 +1603,21 @@
     "lng": -85.165900637732
   },
   {
+    "id": "42a61590-1321-4f59-9495-d21f94a07940",
+    "date": "2026-09-27",
+    "name": "Han Buffet",
+    "address": "8405 Colerain Ave, Cincinnati, OH 45239",
+    "yelp": 4.5,
+    "mullet": 4,
+    "gooning": true,
+    "pizza": true,
+    "cost": 27.46,
+    "link": "https://www.instagram.com/reel/Ddzl0twxjFS/?srtk=MTR6ZHJsNHp1a2xyag==",
+    "fortune": "A surprising encounter will leave a lasting impact.",
+    "lat": 39.223744200929,
+    "lng": -84.587490747471
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
