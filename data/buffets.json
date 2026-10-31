@@ -2008,6 +2008,21 @@
     "lng": -78.857566271888
   },
   {
+    "id": "b4895eb7-0055-4d87-ac67-704abc6cd7d7",
+    "date": "2026-10-26",
+    "name": "Somerset Gourmet Buffet",
+    "address": "1534 N Ctr Ave #180, Somerset, PA 15501",
+    "yelp": 3.2,
+    "mullet": 2.5,
+    "gooning": true,
+    "pizza": true,
+    "cost": 30.74,
+    "link": "https://www.instagram.com/reel/De-NXAiRWEj/?vrfl=eDZhc2RmOXluZ3dq",
+    "fortune": "Tuesday marks the beginning of a prosperous phase for your business endeavors.",
+    "lat": 40.03388404862,
+    "lng": -79.07517409919
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
