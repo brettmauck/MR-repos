@@ -1948,6 +1948,21 @@
     "lng": -79.791879108823
   },
   {
+    "id": "da04dff7-48e5-4f34-a69d-8001871f7ca6",
+    "date": "2026-10-21",
+    "name": "Z Buffet N Grill",
+    "address": "475 S Ben Franklin Rd #70, Indiana, PA 15701",
+    "yelp": 3.8,
+    "mullet": 2.9,
+    "gooning": false,
+    "pizza": true,
+    "cost": 40.94,
+    "link": "https://www.instagram.com/reel/Dexdehqxh2L/?obrf=MXRlMHcwcHd6Zm16eA==",
+    "fortune": "Don’t wait. The time will never be just right.",
+    "lat": 40.613744880424,
+    "lng": -79.191021981093
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
