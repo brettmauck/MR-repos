@@ -1873,6 +1873,21 @@
     "lng": -82.001239733663
   },
   {
+    "id": "15d947df-89f1-462e-b068-d773551fb932",
+    "date": "2026-10-16",
+    "name": "New Happy Garden",
+    "address": "1607 Wheeling Ave, Glen Dale, WV 26038",
+    "yelp": 4,
+    "mullet": 2.6,
+    "gooning": true,
+    "pizza": false,
+    "cost": 32.08,
+    "link": "https://www.instagram.com/reel/Dek2v71RxFe/?exln=OXNyYTJpczZlY3l6",
+    "fortune": "",
+    "lat": 39.93666706501,
+    "lng": -80.754281713971
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
