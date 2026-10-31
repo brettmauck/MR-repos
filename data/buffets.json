@@ -1708,6 +1708,21 @@
     "lng": -97.198506406073
   },
   {
+    "id": "56ff646f-5edd-4308-834c-2c24afbd6d2a",
+    "date": "2026-10-04",
+    "name": "Yichiban Buffet",
+    "address": "1201 W Airport Fwy, Euless, TX 76040",
+    "yelp": 3,
+    "mullet": 3,
+    "gooning": true,
+    "pizza": false,
+    "cost": 35.05,
+    "link": "https://www.instagram.com/reel/DeGA7ncx26_/?mdxt=N2YzNjkwdXZxNWdr",
+    "fortune": "",
+    "lat": 32.837209201657,
+    "lng": -97.100572959766
+  },
+  {
     "id": "ceed6082-2daf-425e-a006-7ef98f46db88",
     "date": "2026-10-27",
     "name": "Nuevo China Buffet",
